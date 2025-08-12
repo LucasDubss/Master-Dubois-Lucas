@@ -1,0 +1,859 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/apasortcite//global/global}
+    \entry{abadie2003economic}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=990a64faa006b28cd41f2075997cba18}{%
+           family={Gardeazabal},
+           familyi={G\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{fullhash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{bibnamehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{authorbibnamehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{authornamehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{authorfullhash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{number}{1}
+      \field{title}{The Economic Costs of Conflict: A Case Study of the Basque Country}
+      \field{volume}{93}
+      \field{year}{2003}
+      \field{pages}{113\bibrangedash 132}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1257/000282803321455188
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/000282803321455188
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/000282803321455188
+      \endverb
+    \endentry
+    \entry{abadie2023penalized}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9c249ba67f0f2d48a9cb9fbcc4c34aa}{%
+           family={L’Hour},
+           familyi={L\bibinitperiod},
+           given={Jérémy},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \strng{fullhash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \strng{bibnamehash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \strng{authorbibnamehash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \strng{authornamehash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \strng{authorfullhash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{542}
+      \field{title}{A Penalized Synthetic Control Estimator for Disaggregated Data}
+      \field{volume}{118}
+      \field{year}{2023}
+      \field{pages}{785\bibrangedash 799}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1080/01621459.2021.1974911
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1974911
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1974911
+      \endverb
+    \endentry
+    \entry{abadie2010synthetic}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b45c00701af03c6c0ab37b49f5d375c5}{%
+           family={Diamond},
+           familyi={D\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be94165c21f502aeaed11e611358d6be}{%
+           family={Hainmueller},
+           familyi={H\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bd5b50178614500025771572867fc86c}
+      \strng{fullhash}{bb1c0d171effadee95d0232167198de0}
+      \strng{bibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authorbibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authornamehash}{bd5b50178614500025771572867fc86c}
+      \strng{authorfullhash}{bb1c0d171effadee95d0232167198de0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{490}
+      \field{title}{Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California’s Tobacco Control Program}
+      \field{volume}{105}
+      \field{year}{2010}
+      \field{pages}{493\bibrangedash 505}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1198/jasa.2009.ap08746
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/41348805
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/41348805
+      \endverb
+    \endentry
+    \entry{afandi2017determinants}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2029d4f605db7f816ddf12fc4077e218}{%
+           family={Afandi},
+           familyi={A\bibinitperiod},
+           given={Akhsyim},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8c1748129e545fdedb7bfe0e6c7edaa}{%
+           family={Rantung},
+           familyi={R\bibinitperiod},
+           given={Vebryna\bibnamedelima Permatasari},
+           giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d2cb1ef82cec38c024c95003baeed8d1}{%
+           family={Marashdeh},
+           familyi={M\bibinitperiod},
+           given={Hazem},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{41a850beac08bce15155016261733eb4}
+      \strng{fullhash}{1a8a8af801bd467ee88a45f8f2bb6556}
+      \strng{bibnamehash}{1a8a8af801bd467ee88a45f8f2bb6556}
+      \strng{authorbibnamehash}{1a8a8af801bd467ee88a45f8f2bb6556}
+      \strng{authornamehash}{41a850beac08bce15155016261733eb4}
+      \strng{authorfullhash}{1a8a8af801bd467ee88a45f8f2bb6556}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Economic Journal of Emerging Markets}
+      \field{number}{2}
+      \field{title}{Determinants of Income Inequality}
+      \field{volume}{9}
+      \field{year}{2017}
+      \field{pages}{159\bibrangedash 171}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.20885/ejem.vol9.iss2.art5
+      \endverb
+      \verb{urlraw}
+      \verb https://journal.uii.ac.id/JEP/article/view/8947
+      \endverb
+      \verb{url}
+      \verb https://journal.uii.ac.id/JEP/article/view/8947
+      \endverb
+    \endentry
+    \entry{araujo2023synthetic}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=35b64c27baa17486324a062f6a42fe8d}{%
+           family={Araujo},
+           familyi={A\bibinitperiod},
+           given={Douglas\bibnamedelimb K.\bibnamedelimi G.},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Bank for International Settlements}%
+      }
+      \strng{namehash}{35b64c27baa17486324a062f6a42fe8d}
+      \strng{fullhash}{35b64c27baa17486324a062f6a42fe8d}
+      \strng{bibnamehash}{35b64c27baa17486324a062f6a42fe8d}
+      \strng{authorbibnamehash}{35b64c27baa17486324a062f6a42fe8d}
+      \strng{authornamehash}{35b64c27baa17486324a062f6a42fe8d}
+      \strng{authorfullhash}{35b64c27baa17486324a062f6a42fe8d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{number}{1127}
+      \field{title}{Synthetic Controls with Machine Learning: Application on the Effect of Labour Deregulation on Worker Productivity in Brazil}
+      \field{type}{BIS Working Paper}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.bis.org/publ/work1127.htm
+      \endverb
+      \verb{url}
+      \verb https://www.bis.org/publ/work1127.htm
+      \endverb
+    \endentry
+    \entry{berman2024capital}{report}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=746769b8f6c0eae623edb21dd5b63756}{%
+           family={Berman},
+           familyi={B\bibinitperiod},
+           given={Yonatan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3848426dbdb5fec621c834b40e9df92b}{%
+           family={Klor},
+           familyi={K\bibinitperiod},
+           given={Esteban\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{194ca397030f508330404d5ebe074c26}
+      \strng{fullhash}{194ca397030f508330404d5ebe074c26}
+      \strng{bibnamehash}{194ca397030f508330404d5ebe074c26}
+      \strng{authorbibnamehash}{194ca397030f508330404d5ebe074c26}
+      \strng{authornamehash}{194ca397030f508330404d5ebe074c26}
+      \strng{authorfullhash}{194ca397030f508330404d5ebe074c26}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{number}{32136}
+      \field{title}{Capital Taxation, Retained Earnings and Inequality: Evidence from Dividend Tax Reforms}
+      \field{type}{NBER Working Paper}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.3386/w32136
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nber.org/papers/w32136
+      \endverb
+      \verb{url}
+      \verb https://www.nber.org/papers/w32136
+      \endverb
+    \endentry
+    \entry{morgan2025distribution}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=329793e2e85a0e935401e6531819f09b}{%
+           family={Morgan},
+           familyi={M\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14314eafe654e3489d2478335d284eab}{%
+           family={Souza},
+           familyi={S\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {UNU-WIDER}%
+      }
+      \strng{namehash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \strng{fullhash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \strng{bibnamehash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \strng{authorbibnamehash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \strng{authornamehash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \strng{authorfullhash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{number}{2025/2}
+      \field{title}{Distribution in Late Development: The Political Economy of the Kuznets Curse in Brazil}
+      \field{type}{WIDER Working Paper}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.35188/UNU-WIDER/2025/559-2
+      \endverb
+      \verb{urlraw}
+      \verb https://www.wider.unu.edu/sites/default/files/Publications/Working-paper/PDF/wp2025-2-distribution-in-late-development.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.wider.unu.edu/sites/default/files/Publications/Working-paper/PDF/wp2025-2-distribution-in-late-development.pdf
+      \endverb
+    \endentry
+    \entry{nallareddy2021corporate}{misc}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=067e46973e533b9d155bdc4d25b6d315}{%
+           family={Nallareddy},
+           familyi={N\bibinitperiod},
+           given={Suresh},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=723cf8ac366f25fb714cf4a724897a14}{%
+           family={Rouen},
+           familyi={R\bibinitperiod},
+           given={Ethan},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=563837c3a13d57c25444aa0ae3ac2e64}{%
+           family={Suárez\bibnamedelima Serrato},
+           familyi={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Juan\bibnamedelima Carlos},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b55be94c06f88e76ac2d77370a888ff0}
+      \strng{fullhash}{eaa9d59b6ae23d358c9743f242678acd}
+      \strng{bibnamehash}{eaa9d59b6ae23d358c9743f242678acd}
+      \strng{authorbibnamehash}{eaa9d59b6ae23d358c9743f242678acd}
+      \strng{authornamehash}{b55be94c06f88e76ac2d77370a888ff0}
+      \strng{authorfullhash}{eaa9d59b6ae23d358c9743f242678acd}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{title}{Do Corporate Tax Cuts Increase Income Inequality?}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.journals.uchicago.edu/doi/full/10.1086/718950
+      \endverb
+      \verb{url}
+      \verb https://www.journals.uchicago.edu/doi/full/10.1086/718950
+      \endverb
+    \endentry
+    \entry{roine2009long}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4cdb304f7cec074a65d89f50ab460d62}{%
+           family={Roine},
+           familyi={R\bibinitperiod},
+           given={Jesper},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b8ed2cfc4a72eaeaecabe73f253c2a57}{%
+           family={Vlachos},
+           familyi={V\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8379be9e35c882e5eebdeef5dc7c4cb8}{%
+           family={Waldenström},
+           familyi={W\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4bca988f4faf72fb43833f15fc341d92}
+      \strng{fullhash}{3f823fa7ae58293b290e86087db808e5}
+      \strng{bibnamehash}{3f823fa7ae58293b290e86087db808e5}
+      \strng{authorbibnamehash}{3f823fa7ae58293b290e86087db808e5}
+      \strng{authornamehash}{4bca988f4faf72fb43833f15fc341d92}
+      \strng{authorfullhash}{3f823fa7ae58293b290e86087db808e5}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{number}{7--8}
+      \field{title}{The Long-Run Determinants of Inequality: What Can We Learn from Top Income Data?}
+      \field{volume}{93}
+      \field{year}{2009}
+      \field{pages}{974\bibrangedash 988}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.jpubeco.2009.04.003
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.jpubeco.2009.04.003
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.jpubeco.2009.04.003
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{nyt/global//global/global}
+    \entry{abadie2010synthetic}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b45c00701af03c6c0ab37b49f5d375c5}{%
+           family={Diamond},
+           familyi={D\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be94165c21f502aeaed11e611358d6be}{%
+           family={Hainmueller},
+           familyi={H\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bd5b50178614500025771572867fc86c}
+      \strng{fullhash}{bb1c0d171effadee95d0232167198de0}
+      \strng{bibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authorbibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authornamehash}{bd5b50178614500025771572867fc86c}
+      \strng{authorfullhash}{bb1c0d171effadee95d0232167198de0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{490}
+      \field{title}{Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California’s Tobacco Control Program}
+      \field{volume}{105}
+      \field{year}{2010}
+      \field{pages}{493\bibrangedash 505}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1198/jasa.2009.ap08746
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/41348805
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/41348805
+      \endverb
+    \endentry
+    \entry{abadie2003economic}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=990a64faa006b28cd41f2075997cba18}{%
+           family={Gardeazabal},
+           familyi={G\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{fullhash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{bibnamehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{authorbibnamehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{authornamehash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \strng{authorfullhash}{f722330d5128ffafe3dd6ff1eae7e9c0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{number}{1}
+      \field{title}{The Economic Costs of Conflict: A Case Study of the Basque Country}
+      \field{volume}{93}
+      \field{year}{2003}
+      \field{pages}{113\bibrangedash 132}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1257/000282803321455188
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/000282803321455188
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/000282803321455188
+      \endverb
+    \endentry
+    \entry{abadie2023penalized}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9c249ba67f0f2d48a9cb9fbcc4c34aa}{%
+           family={L’Hour},
+           familyi={L\bibinitperiod},
+           given={Jérémy},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \strng{fullhash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \strng{bibnamehash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \strng{authorbibnamehash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \strng{authornamehash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \strng{authorfullhash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{542}
+      \field{title}{A Penalized Synthetic Control Estimator for Disaggregated Data}
+      \field{volume}{118}
+      \field{year}{2023}
+      \field{pages}{785\bibrangedash 799}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1080/01621459.2021.1974911
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1974911
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1974911
+      \endverb
+    \endentry
+    \entry{afandi2017determinants}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2029d4f605db7f816ddf12fc4077e218}{%
+           family={Afandi},
+           familyi={A\bibinitperiod},
+           given={Akhsyim},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8c1748129e545fdedb7bfe0e6c7edaa}{%
+           family={Rantung},
+           familyi={R\bibinitperiod},
+           given={Vebryna\bibnamedelima Permatasari},
+           giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d2cb1ef82cec38c024c95003baeed8d1}{%
+           family={Marashdeh},
+           familyi={M\bibinitperiod},
+           given={Hazem},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{41a850beac08bce15155016261733eb4}
+      \strng{fullhash}{1a8a8af801bd467ee88a45f8f2bb6556}
+      \strng{bibnamehash}{1a8a8af801bd467ee88a45f8f2bb6556}
+      \strng{authorbibnamehash}{1a8a8af801bd467ee88a45f8f2bb6556}
+      \strng{authornamehash}{41a850beac08bce15155016261733eb4}
+      \strng{authorfullhash}{1a8a8af801bd467ee88a45f8f2bb6556}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Economic Journal of Emerging Markets}
+      \field{number}{2}
+      \field{title}{Determinants of Income Inequality}
+      \field{volume}{9}
+      \field{year}{2017}
+      \field{pages}{159\bibrangedash 171}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.20885/ejem.vol9.iss2.art5
+      \endverb
+      \verb{urlraw}
+      \verb https://journal.uii.ac.id/JEP/article/view/8947
+      \endverb
+      \verb{url}
+      \verb https://journal.uii.ac.id/JEP/article/view/8947
+      \endverb
+    \endentry
+    \entry{araujo2023synthetic}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=35b64c27baa17486324a062f6a42fe8d}{%
+           family={Araujo},
+           familyi={A\bibinitperiod},
+           given={Douglas\bibnamedelimb K.\bibnamedelimi G.},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Bank for International Settlements}%
+      }
+      \strng{namehash}{35b64c27baa17486324a062f6a42fe8d}
+      \strng{fullhash}{35b64c27baa17486324a062f6a42fe8d}
+      \strng{bibnamehash}{35b64c27baa17486324a062f6a42fe8d}
+      \strng{authorbibnamehash}{35b64c27baa17486324a062f6a42fe8d}
+      \strng{authornamehash}{35b64c27baa17486324a062f6a42fe8d}
+      \strng{authorfullhash}{35b64c27baa17486324a062f6a42fe8d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{number}{1127}
+      \field{title}{Synthetic Controls with Machine Learning: Application on the Effect of Labour Deregulation on Worker Productivity in Brazil}
+      \field{type}{BIS Working Paper}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.bis.org/publ/work1127.htm
+      \endverb
+      \verb{url}
+      \verb https://www.bis.org/publ/work1127.htm
+      \endverb
+    \endentry
+    \entry{berman2024capital}{report}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=746769b8f6c0eae623edb21dd5b63756}{%
+           family={Berman},
+           familyi={B\bibinitperiod},
+           given={Yonatan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3848426dbdb5fec621c834b40e9df92b}{%
+           family={Klor},
+           familyi={K\bibinitperiod},
+           given={Esteban\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{194ca397030f508330404d5ebe074c26}
+      \strng{fullhash}{194ca397030f508330404d5ebe074c26}
+      \strng{bibnamehash}{194ca397030f508330404d5ebe074c26}
+      \strng{authorbibnamehash}{194ca397030f508330404d5ebe074c26}
+      \strng{authornamehash}{194ca397030f508330404d5ebe074c26}
+      \strng{authorfullhash}{194ca397030f508330404d5ebe074c26}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{number}{32136}
+      \field{title}{Capital Taxation, Retained Earnings and Inequality: Evidence from Dividend Tax Reforms}
+      \field{type}{NBER Working Paper}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.3386/w32136
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nber.org/papers/w32136
+      \endverb
+      \verb{url}
+      \verb https://www.nber.org/papers/w32136
+      \endverb
+    \endentry
+    \entry{morgan2025distribution}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=329793e2e85a0e935401e6531819f09b}{%
+           family={Morgan},
+           familyi={M\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14314eafe654e3489d2478335d284eab}{%
+           family={Souza},
+           familyi={S\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {UNU-WIDER}%
+      }
+      \strng{namehash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \strng{fullhash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \strng{bibnamehash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \strng{authorbibnamehash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \strng{authornamehash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \strng{authorfullhash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{number}{2025/2}
+      \field{title}{Distribution in Late Development: The Political Economy of the Kuznets Curse in Brazil}
+      \field{type}{WIDER Working Paper}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.35188/UNU-WIDER/2025/559-2
+      \endverb
+      \verb{urlraw}
+      \verb https://www.wider.unu.edu/sites/default/files/Publications/Working-paper/PDF/wp2025-2-distribution-in-late-development.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.wider.unu.edu/sites/default/files/Publications/Working-paper/PDF/wp2025-2-distribution-in-late-development.pdf
+      \endverb
+    \endentry
+    \entry{nallareddy2021corporate}{misc}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=067e46973e533b9d155bdc4d25b6d315}{%
+           family={Nallareddy},
+           familyi={N\bibinitperiod},
+           given={Suresh},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=723cf8ac366f25fb714cf4a724897a14}{%
+           family={Rouen},
+           familyi={R\bibinitperiod},
+           given={Ethan},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=563837c3a13d57c25444aa0ae3ac2e64}{%
+           family={Suárez\bibnamedelima Serrato},
+           familyi={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Juan\bibnamedelima Carlos},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b55be94c06f88e76ac2d77370a888ff0}
+      \strng{fullhash}{eaa9d59b6ae23d358c9743f242678acd}
+      \strng{bibnamehash}{eaa9d59b6ae23d358c9743f242678acd}
+      \strng{authorbibnamehash}{eaa9d59b6ae23d358c9743f242678acd}
+      \strng{authornamehash}{b55be94c06f88e76ac2d77370a888ff0}
+      \strng{authorfullhash}{eaa9d59b6ae23d358c9743f242678acd}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{title}{Do Corporate Tax Cuts Increase Income Inequality?}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.journals.uchicago.edu/doi/full/10.1086/718950
+      \endverb
+      \verb{url}
+      \verb https://www.journals.uchicago.edu/doi/full/10.1086/718950
+      \endverb
+    \endentry
+    \entry{roine2009long}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4cdb304f7cec074a65d89f50ab460d62}{%
+           family={Roine},
+           familyi={R\bibinitperiod},
+           given={Jesper},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b8ed2cfc4a72eaeaecabe73f253c2a57}{%
+           family={Vlachos},
+           familyi={V\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8379be9e35c882e5eebdeef5dc7c4cb8}{%
+           family={Waldenström},
+           familyi={W\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4bca988f4faf72fb43833f15fc341d92}
+      \strng{fullhash}{3f823fa7ae58293b290e86087db808e5}
+      \strng{bibnamehash}{3f823fa7ae58293b290e86087db808e5}
+      \strng{authorbibnamehash}{3f823fa7ae58293b290e86087db808e5}
+      \strng{authornamehash}{4bca988f4faf72fb43833f15fc341d92}
+      \strng{authorfullhash}{3f823fa7ae58293b290e86087db808e5}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{number}{7--8}
+      \field{title}{The Long-Run Determinants of Inequality: What Can We Learn from Top Income Data?}
+      \field{volume}{93}
+      \field{year}{2009}
+      \field{pages}{974\bibrangedash 988}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.jpubeco.2009.04.003
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.jpubeco.2009.04.003
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.jpubeco.2009.04.003
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
