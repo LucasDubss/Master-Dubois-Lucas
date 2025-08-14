@@ -1,9 +1,12 @@
-name: Build PDFs
+name: Build PDFs and Publish Release
 
 on:
   push:
     branches: [ main ]
   workflow_dispatch:   
+
+permissions:
+  contents: write   
 
 jobs:
   build:
@@ -20,10 +23,24 @@ jobs:
             Beamer_master.tex   
 
 
-      - name: Upload PDFs
+      - name: Upload PDFs as artifact
         uses: actions/upload-artifact@v4
         with:
           name: compiled-pdfs
           path: |
             master.pdf
-            Beamer_master.pdf    
+            Beamer_master.pdf
+
+      - name: Publish PDFs to GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: latest
+          release_name: Latest PDFs
+          draft: false
+          prerelease: false
+          files: |
+            master.pdf
+            Beamer_master.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+   
