@@ -3,6 +3,7 @@ name: Build PDFs
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:   
 
 jobs:
   build:
@@ -11,18 +12,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Compile BOTH TeX files (latexmk handles BibTeX/Biber automatically)
       - name: Compile LaTeX (master & beamer)
         uses: xu-cheng/latex-action@v3
         with:
           root_file: |
             master.tex
-            beamer_master.tex
-          # Uncomment any of the following if needed:
-          # latexmk_use_lualatex: true        # use lualatex instead of pdflatex
-          # latexmk_use_xelatex: true         # or xelatex
-          # latexmk_shell_escape: true        # needed if you use minted/Pygments
-          # extra_system_packages: "ghostscript"  # example if you need extra packages
+            Beamer_master.tex    # ← match the exact file name (capital B)
+
 
       - name: Upload PDFs
         uses: actions/upload-artifact@v4
@@ -30,4 +26,4 @@ jobs:
           name: compiled-pdfs
           path: |
             master.pdf
-            Beamer_master.pdf
+            Beamer_master.pdf     # ← matches the output name
