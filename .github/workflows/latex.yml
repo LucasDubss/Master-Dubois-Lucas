@@ -26,4 +26,4 @@ jobs:
           name: compiled-pdfs
           path: |
             master.pdf
-            Beamer_master.pdf     # ← matches the output name
+            Beamer_master.pdf    
