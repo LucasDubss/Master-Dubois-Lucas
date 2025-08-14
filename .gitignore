@@ -21,7 +21,6 @@
 *.vrb
 _minted*
 *-blx.bib
-
-# OS / Editor
+*.pdf
 .DS_Store
 Thumbs.db
