@@ -1,14 +1,26 @@
 \documentclass{beamer}
-\usetheme{metropolis} % Requires metropolis theme installed
+\usetheme{metropolis} 
 
 \usepackage{amsmath}
 \usepackage[T1]{fontenc}
 \usepackage{bookmark}
 \usepackage{graphicx}
+\usepackage{adjustbox} 
+\usepackage{threeparttable} 
+\usepackage{tabularx} 
 \usepackage{hyperref}
 \usepackage{booktabs}
 \usepackage{xcolor}
 \usepackage{colortbl}
+\usepackage{siunitx} 
+
+\sisetup{
+  group-digits=false,     
+  round-mode=places,        
+  round-precision=3,        
+  table-number-alignment=center
+}
+
 
 \definecolor{Azul}{RGB}{29,66,191}
 \definecolor{myGreen}{RGB}{12, 170, 50} 
@@ -28,30 +40,94 @@
 \title{\LARGE Dividend Taxation and Top-Income Inequality}
 \author{Lucas Dubois}
 \institute{HEC Liège}
-\date{}
+
 \begin{document}
 
 \begin{frame}
-    \titlepage
+  \centering
+  {\usebeamerfont{title}\usebeamercolor[fg]{title}\LARGE \inserttitle\par}
+  \vspace{1cm}
+  {\usebeamerfont{author}\Large \insertauthor\par}
+  \vspace{0.3cm}
+  {\usebeamerfont{institute}\large \insertinstitute\par}
 \end{frame}
 
 \begin{frame}
-    \frametitle{\Large{Research Design:} DUBOIS Lucas (s216283)}
-    \begin{itemize}
-        \item \textbf{Research Question:} \textit{How do dividend tax cuts impact top-income inequality?}
-        \item \textbf{Objective:} This paper analyzes the effect of Brazil’s 1995 dividend tax cut and explores whether the observed rise in top-income inequality was a consequence of this policy change.
-        \item \textbf{Approach:} Quantitative analysis using historical data from the World Inequality Database (\href{https://wid.world/country/brazil/}{WID}) and national sources such as IBGE.
-        \item \textbf{Methodology:} A combination of econometric models will be employed to estimate the causal effect of the 1995 tax reform. These include panel regressions with fixed effects, a difference-in-differences (DiD) approach comparing Brazil to similar countries, and a synthetic control method (SCM). The models will incorporate relevant controls (e.g., GDP growth, inflation, other tax policies) to ensure robustness and validity.
-    \end{itemize}
+    \frametitle{\Large{ Summary Statistics:}}
+    \begin{block}{Summary Statistics}
+      \small
+      \centering
+      \begin{adjustbox}{max width=\textwidth}
+        \begin{tabular}{
+          l
+          S[table-format=5.6] 
+          S[table-format=4.4] 
+          S[table-format=9.3]  
+        }
+          \toprule
+          \textbf{\textcolor{pred}{Variable}} &
+          \multicolumn{1}{c}{\textbf{\textcolor{pred}{Mean}}} &
+          \multicolumn{1}{c}{\textbf{\textcolor{pred}{Median}}} &
+          \multicolumn{1}{c}{\textbf{\textcolor{pred}{Variance}}} \\
+          \midrule
+          top1\_inc                & 0.1603955205437133  & 0.1572 & 0.003624357980546317 \\
+          top10\_inc               & 0.4576302749459376  & 0.4744 & 0.01053302940452883  \\
+          inflation                & 17.02712048192771   & 3.53   & 68173.34542195579    \\
+          gdp\_per\_cap            & 15457.124421686749  & 5803.3 & 430096796.8928224    \\
+          unemployment             & 7.476687555953448   & 6.2    & 26.2362483152324     \\
+          human\_capital\_index    & 0.6035051546391753  & 0.6    & 0.021883533594027744 \\
+          interest\_rate\_pct\_rev & 8.46678704856787    & 5.835  & 2278.911101570825    \\
+          \bottomrule
+        \end{tabular}
+      \end{adjustbox}
+    \end{block}
+  \end{frame}
+
+\begin{frame}
+    \frametitle{\Large Top 1\% Income: Brazil vs. World}
+    \centering
+    \includegraphics[width=\linewidth]{brazil_world_top1.pdf}
+    \vspace{0.3cm}
+    \footnotesize
 \end{frame}
 
 \begin{frame}
-    \frametitle{\LARGE Literature Review:}
-    \begin{itemize}
-        \item Becker, G. S. (1968). Crime and punishment: An economic approach. Journal of Political Economy, 76(2), 169–217.
-        \\\vspace{0.1cm}
-        \hspace{0.5cm}\textit{key insights}: Crime from a rational standpoint: humans commit crimes when the expected benefits exceed the expected costs.
-    \end{itemize}
+    \frametitle{\Large Top 10\% Income: Brazil vs. World}
+    \centering
+    \includegraphics[width=\linewidth]{brazil_world_top10.pdf}
+    \vspace{0.3cm}
+    \footnotesize
 \end{frame}
 
+\begin{frame}
+    \frametitle{\Large GDP per Capita : Brazil vs. World}
+    \centering
+    \includegraphics[width=\linewidth]{brazil_world_gdp_pc.pdf}
+    \vspace{0.3cm}
+    \footnotesize
+\end{frame}
+
+\begin{frame}
+    \frametitle{\Large Two-way Fixed Effects Model}
+    \small
+    \begin{threeparttable}
+      \begin{tabular}{l c c c}
+        \toprule
+        \textbf{\textcolor{pred}{Variable}} & \textbf{\textcolor{pred}{Coef.}} & \textbf{\textcolor{pred}{Std. Err.}} & \textbf{\textcolor{pred}{p-value}} \\
+        \midrule
+        inflation        & -1.626e-06 & 5.192e-06 & 0.7542 \\
+        gdp\_per\_cap    & 0.0095$^{***}$ & 0.0030 & 0.0018 \\
+        gdp\_sq          & -5.332e-05$^{***}$ & 2.041e-05 & 0.0090 \\
+        \midrule
+        \multicolumn{4}{l}{\textit{Included effects:} Entity, Time} \\
+        \multicolumn{4}{l}{\textit{Obs} = 3{,}237;\quad \textit{Entities} = 83;\quad \textit{Time periods} = 39} \\
+        \multicolumn{4}{l}{\textit{R}$^{2}$ (Overall) = -0.1285\quad \textit{Between} = 0.1320;\quad \textit{Within} = 0.0046} \\
+        \bottomrule
+      \end{tabular}
+      \begin{tablenotes}[flushleft]
+        \footnotesize
+        \item $^{*}$ $p<0.05$, $^{**}$ $p<0.01$, $^{***}$ $p<0.001$.
+      \end{tablenotes}
+    \end{threeparttable}
+  \end{frame}
 \end{document}
