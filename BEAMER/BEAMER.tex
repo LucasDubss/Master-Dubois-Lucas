@@ -1,0 +1,157 @@
+% !TeX program = xelatex
+\documentclass[11pt,aspectratio=169]{beamer}
+
+\usetheme{metropolis}
+\usepackage{fontspec}
+\usepackage{appendixnumberbeamer} % for \inserttotalframenumber
+\usepackage{graphicx,booktabs,amsmath,amssymb,tikz}
+\usepackage{hyperref}
+\usepackage{pifont}
+\usepackage{xcolor}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{/Users/lucasdubois/Desktop/LaTeX/MASTER/master.bib}
+% ---------------- Fonts ----------------
+\setsansfont{Fira Sans}[
+  Ligatures=TeX,
+  Scale=MatchLowercase,
+  UprightFont     = * Book,
+  ItalicFont      = * Book Italic,
+  BoldFont        = * SemiBold,
+  BoldItalicFont  = * SemiBold Italic
+]
+\setmonofont{Fira Mono}[Scale=MatchLowercase]
+
+\title{\textsc{Empirical Asset Pricing via Machine Learning}}
+\author{Myriam Lamborelle \& Lucas Dubois}
+\institute{HEC Liège}
+\date{\today}
+
+% ---------------- Executive Palette ----------------
+\definecolor{primaryred}{RGB}{127,20,22}
+\definecolor{midnight}{RGB}{0,22,36}
+\definecolor{steelblue}{RGB}{171,193,223}
+\definecolor{offwhite}{RGB}{230,230,220}
+\definecolor{darkgreen}{RGB}{34,139,34}
+
+\setbeamercolor{background canvas}{bg=offwhite}
+\setbeamercolor{normal text}{fg=midnight}
+\setbeamercolor{title}{fg=midnight}
+\setbeamercolor{subtitle}{fg=midnight!80}
+\setbeamercolor{author}{fg=midnight!75}
+\setbeamercolor{date}{fg=midnight!75}
+\setbeamercolor{frametitle}{fg=steelblue,bg=midnight}
+
+% Progress bar colors (used on section pages)
+\setbeamercolor{progress bar}{fg=primaryred,bg=midnight!30}
+\setbeamercolor{progress bar in section page}{fg=primaryred,bg=midnight!30}
+\setbeamercolor{title separator}{fg=primaryred,bg=primaryred!25}
+% Blocks very light (demo-style)
+\setbeamercolor{block title}{fg=midnight,bg=steelblue!12}
+\setbeamercolor{block body}{fg=midnight,bg=steelblue!6}
+
+% ---------------- Metropolis options ----------------
+% Show ONLY a section page between sections with a progress bar.
+% No per-frame progress under the frametitle.
+\metroset{
+  numbering=fraction,
+  progressbar=none,          % no frametitle progress bar
+  sectionpage=progressbar,   % section pages with progress bar (single line)
+  block=transparent,
+  titleformat title=regular,
+  subsectionpage=none
+}
+
+% Make the section-page progress bar thicker
+\makeatletter
+\setlength{\metropolis@progressonsectionpage@linewidth}{1.8pt} % thicker than default
+\makeatother
+
+\hypersetup{colorlinks=true,linkcolor=primaryred,urlcolor=primaryred}
+
+\begin{document}
+
+% ========== Title page ==========
+\maketitle
+
+% ========== Outline ==========
+\begin{frame}{\textsc{Table of Contents}}
+  \vspace{1.0ex}
+  \tableofcontents
+\end{frame}
+
+% ================== Content ==================
+\section{\textsc{Introduction:}}
+
+\begin{frame}{\textsc{Objectives:}}
+    The paper {\color{primaryred}"Empirical Asset Pricing via Machine Learning"} has a twofold objective \cite{abadie2003economic}
+  \begin{enumerate}
+   \item Setting a {\color{steelblue} new benchmarks} to compare ML methods for asset pricing.
+   \item Synthesizing the {\color{steelblue}asset pricing theory} with the emerging {\color{steelblue} ML literature}.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{\textsc{Definition:}}
+    What is {\color{steelblue}\textbf{Machine Learning (ML)}}?
+    \begin{enumerate}
+        \item {\color{primaryred}High-dimensional models.}
+        \begin{itemize}
+            \item[\textcolor{darkgreen}{\ding{51}}] Flexibility.
+            \item[\textcolor{red}{\ding{55}}] Overfitting.
+        \end{itemize}
+        \item {\color{primaryred}“Regularization” methods for model selection.}
+            \begin{itemize}
+                \item[\textcolor{darkgreen}{\ding{51}}] Fix Overfitting.
+            \end{itemize}
+        \item {\color{primaryred}Efficient algorithms for searching model specifications.}
+            \begin{itemize}
+                \item[\textcolor{darkgreen}{\ding{51}}] Fix non-linearities.
+            \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+
+\begin{frame}{\textsc{Dataset and Metrics:}}
+    \begin{itemize}
+        \item {\color{primaryred}\textbf{Universe:}} Monthly U.S. equities (CRSP/Compustat)
+        \item {\color{primaryred}\textbf{Sample:}} {\color{steelblue}\textbf{30,000 individual stocks}}.
+        \item {\color{primaryred}\textbf{Period:}} {\color{steelblue}\textbf{60 years}} (1957–2016)
+        \item {\color{primaryred}\textbf{Predictors:}} {\textbf{94 firm-level characteristics}} from the "factor zoo" + {\textbf{74 industry-sector dummies}} + interaction terms.
+        \begin{itemize}
+            \item {\color{steelblue} \textbf{900+ predictors}} in total.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\section{\textsc{Results:}}
+\section{\textsc{Wrap-up}}
+\begin{frame}{Conclusion}
+  \begin{itemize}
+    \item Using a single, thicker Metropolis section progress bar.
+    \item Clean frametitles with no extra progress line on content slides.
+    \item Palette and typography unchanged.
+  \end{itemize}
+\end{frame}
+
+\section{\textsc{Hello}}
+\begin{frame}{Conclusion}
+  \begin{itemize}
+    \item Using a single, thicker Metropolis section progress bar.
+    \item Clean frametitles with no extra progress line on content slides.
+    \item Palette and typography unchanged.
+  \end{itemize}
+\end{frame}
+
+
+\section{\textsc{Hello again}}
+\begin{frame}{Conclusion}
+  \begin{itemize}
+    \item Using a single, thicker Metropolis section progress bar.
+    \item Clean frametitles with no extra progress line on content slides.
+    \item Palette and typography unchanged.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{\textsc{References:}}
+   \printbibliography[heading=none]
+\end{frame}
+\end{document}
