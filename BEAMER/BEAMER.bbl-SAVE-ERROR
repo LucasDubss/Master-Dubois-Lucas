@@ -19,6 +19,51 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{abadie2010synthetic}{article}{}
+      \name{author}{3}{}{%
+        {{hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b45c00701af03c6c0ab37b49f5d375c5}{%
+           family={Diamond},
+           familyi={D\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod}}}%
+        {{hash=be94165c21f502aeaed11e611358d6be}{%
+           family={Hainmueller},
+           familyi={H\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{fullhash}{bb1c0d171effadee95d0232167198de0}
+      \strng{bibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authorbibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authornamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authorfullhash}{bb1c0d171effadee95d0232167198de0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{490}
+      \field{title}{Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California’s Tobacco Control Program}
+      \field{volume}{105}
+      \field{year}{2010}
+      \field{pages}{493\bibrangedash 505}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1198/jasa.2009.ap08746
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/41348805
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/41348805
+      \endverb
+    \endentry
     \entry{abadie2003economic}{article}{}
       \name{author}{2}{}{%
         {{hash=da499bff747c5f6cd0ec9185c820ba4d}{%
@@ -57,6 +102,357 @@
       \endverb
       \verb{url}
       \verb https://www.aeaweb.org/articles?id=10.1257/000282803321455188
+      \endverb
+    \endentry
+    \entry{abadie_penalized_2021}{article}{}
+      \name{author}{2}{}{%
+        {{hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a9c249ba67f0f2d48a9cb9fbcc4c34aa}{%
+           family={L’Hour},
+           familyi={L\bibinitperiod},
+           given={Jérémy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \strng{fullhash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \strng{bibnamehash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \strng{authorbibnamehash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \strng{authornamehash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \strng{authorfullhash}{c5bcd18e73993ec6bb9e38e5a34e8887}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Synthetic control methods are commonly applied in empirical research to estimate the effects of treatments or interventions on aggregate outcomes. A synthetic control estimator compares the outcome of a treated unit to the outcome of a weighted average of untreated units that best resembles the characteristics of the treated unit before the intervention. When disaggregated data are available, constructing separate synthetic controls for each treated unit may help avoid interpolation biases. However, the problem of finding a synthetic control that best reproduces the characteristics of a treated unit may not have a unique solution. Multiplicity of solutions is a particularly daunting challenge when the data include many treated and untreated units. To address this challenge, we propose a synthetic control estimator that penalizes the pairwise discrepancies between the characteristics of the treated units and the characteristics of the units that contribute to their synthetic controls. The penalization parameter trades off pairwise matching discrepancies with respect to the characteristics of each unit in the synthetic control against matching discrepancies with respect to the characteristics of the synthetic control unit as a whole. We study the properties of this estimator and propose data-driven choices of the penalization parameter.}
+      \field{issn}{0162-1459, 1537-274X}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{month}{10}
+      \field{number}{536}
+      \field{title}{A {Penalized} {Synthetic} {Control} {Estimator} for {Disaggregated} {Data}}
+      \field{urlday}{25}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{volume}{116}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{1817\bibrangedash 1834}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1080/01621459.2021.1971535
+      \endverb
+      \verb{file}
+      \verb PDF:/Users/lucasdubois/Zotero/storage/MEHFFTSN/Abadie et L’Hour - 2021 - A Penalized Synthetic Control Estimator for Disaggregated Data.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1971535
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1971535
+      \endverb
+    \endentry
+    \entry{araujo2023synthetic}{article}{}
+      \name{author}{1}{}{%
+        {{hash=35b64c27baa17486324a062f6a42fe8d}{%
+           family={Araujo},
+           familyi={A\bibinitperiod},
+           given={Douglas\bibnamedelimb K\bibnamedelima G},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{35b64c27baa17486324a062f6a42fe8d}
+      \strng{fullhash}{35b64c27baa17486324a062f6a42fe8d}
+      \strng{bibnamehash}{35b64c27baa17486324a062f6a42fe8d}
+      \strng{authorbibnamehash}{35b64c27baa17486324a062f6a42fe8d}
+      \strng{authornamehash}{35b64c27baa17486324a062f6a42fe8d}
+      \strng{authorfullhash}{35b64c27baa17486324a062f6a42fe8d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Synthetic control methods are a data-driven way to calculate counterfactuals from control individuals for the estimation of treatment effects in many settings of empirical importance. In canonical implementations, this weighting is linear and the key methodological steps of donor pool selection and covariate comparison between the treated entity and its synthetic control depend on some degree of subjective judgment. Thus current methods may not perform best in settings with large datasets or when the best synthetic control is obtained by a nonlinear combination of donor pool individuals. This paper proposes “machine controls”, synthetic controls based on automated donor pool selection through clustering algorithms, supervised learning for flexible non-linear weighting of control entities and manifold learning to confirm numerically whether the synthetic control indeed resembles the target unit. The machine controls method is demonstrated with the effect of the 2017 labour deregulation on worker productivity in Brazil. Contrary to policymaker expectations at the time of enactment of the reform, there is no discernible effect on worker productivity. This result points to the deep challenges in increasing the level of productivity, and with it, economic welfare. JEL: B41, C32, C54, E24, J50, J83, O47. Keywords: causal inference, synthetic controls, machine learning, labour reforms, productivity.}
+      \field{title}{Synthetic controls with machine learning: application on the effect of labour deregulation on worker productivity in {Brazil}}
+      \verb{file}
+      \verb PDF:/Users/lucasdubois/Zotero/storage/ZTEUWFN3/Araujo - Synthetic controls with machine learning application on the effect of labour deregulation on worker.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{berman2024capital}{report}{}
+      \name{author}{2}{}{%
+        {{hash=746769b8f6c0eae623edb21dd5b63756}{%
+           family={Berman},
+           familyi={B\bibinitperiod},
+           given={Yonatan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3848426dbdb5fec621c834b40e9df92b}{%
+           family={Klor},
+           familyi={K\bibinitperiod},
+           given={Esteban\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{194ca397030f508330404d5ebe074c26}
+      \strng{fullhash}{194ca397030f508330404d5ebe074c26}
+      \strng{bibnamehash}{194ca397030f508330404d5ebe074c26}
+      \strng{authorbibnamehash}{194ca397030f508330404d5ebe074c26}
+      \strng{authornamehash}{194ca397030f508330404d5ebe074c26}
+      \strng{authorfullhash}{194ca397030f508330404d5ebe074c26}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{number}{32136}
+      \field{title}{Capital Taxation, Retained Earnings and Inequality: Evidence from Dividend Tax Reforms}
+      \field{type}{NBER Working Paper}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.3386/w32136
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nber.org/papers/w32136
+      \endverb
+      \verb{url}
+      \verb https://www.nber.org/papers/w32136
+      \endverb
+    \endentry
+    \entry{chetty_agency_2007}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7a853740afbc544905334cf607b3cd51}{%
+           family={Chetty},
+           familyi={C\bibinitperiod},
+           given={Raj},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f040f5aac2c176810fed8b44b9c401a4}{%
+           family={Saez},
+           familyi={S\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \strng{namehash}{1363d919bd594b9d88197c4e1f33e977}
+      \strng{fullhash}{1363d919bd594b9d88197c4e1f33e977}
+      \strng{bibnamehash}{1363d919bd594b9d88197c4e1f33e977}
+      \strng{authorbibnamehash}{1363d919bd594b9d88197c4e1f33e977}
+      \strng{authornamehash}{1363d919bd594b9d88197c4e1f33e977}
+      \strng{authorfullhash}{1363d919bd594b9d88197c4e1f33e977}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{number}{w13538}
+      \field{title}{An {Agency} {Theory} of {Dividend} {Taxation}}
+      \field{urlday}{31}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2007}
+      \field{urldateera}{ce}
+      \field{pages}{w13538}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.3386/w13538
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nber.org/papers/w13538.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.nber.org/papers/w13538.pdf
+      \endverb
+    \endentry
+    \entry{morgan2025distribution}{article}{}
+      \name{author}{2}{}{%
+        {{hash=329793e2e85a0e935401e6531819f09b}{%
+           family={Morgan},
+           familyi={M\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=14314eafe654e3489d2478335d284eab}{%
+           family={Souza},
+           familyi={S\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {UNU-WIDER}%
+      }
+      \strng{namehash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \strng{fullhash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \strng{bibnamehash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \strng{authorbibnamehash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \strng{authornamehash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \strng{authorfullhash}{02fc84ccddb3b5e7f9e722f9ca4ff822}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{number}{2025/2}
+      \field{title}{Distribution in Late Development: The Political Economy of the Kuznets Curse in Brazil}
+      \field{type}{WIDER Working Paper}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.35188/UNU-WIDER/2025/559-2
+      \endverb
+      \verb{urlraw}
+      \verb https://www.wider.unu.edu/sites/default/files/Publications/Working-paper/PDF/wp2025-2-distribution-in-late-development.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.wider.unu.edu/sites/default/files/Publications/Working-paper/PDF/wp2025-2-distribution-in-late-development.pdf
+      \endverb
+    \endentry
+    \entry{nallareddy2021corporate}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=067e46973e533b9d155bdc4d25b6d315}{%
+           family={Nallareddy},
+           familyi={N\bibinitperiod},
+           given={Suresh},
+           giveni={S\bibinitperiod}}}%
+        {{hash=723cf8ac366f25fb714cf4a724897a14}{%
+           family={Rouen},
+           familyi={R\bibinitperiod},
+           given={Ethan},
+           giveni={E\bibinitperiod}}}%
+        {{hash=563837c3a13d57c25444aa0ae3ac2e64}{%
+           family={Suárez\bibnamedelima Serrato},
+           familyi={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Juan\bibnamedelima Carlos},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{eaa9d59b6ae23d358c9743f242678acd}
+      \strng{fullhash}{eaa9d59b6ae23d358c9743f242678acd}
+      \strng{bibnamehash}{eaa9d59b6ae23d358c9743f242678acd}
+      \strng{authorbibnamehash}{eaa9d59b6ae23d358c9743f242678acd}
+      \strng{authornamehash}{eaa9d59b6ae23d358c9743f242678acd}
+      \strng{authorfullhash}{eaa9d59b6ae23d358c9743f242678acd}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{title}{Do Corporate Tax Cuts Increase Income Inequality?}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.journals.uchicago.edu/doi/full/10.1086/718950
+      \endverb
+      \verb{url}
+      \verb https://www.journals.uchicago.edu/doi/full/10.1086/718950
+      \endverb
+    \endentry
+    \entry{zucmanpalomo}{article}{}
+      \name{author}{9}{}{%
+        {{hash=03215e94da27b4d17f63a014634af849}{%
+           family={Palomo},
+           familyi={P\bibinitperiod},
+           given={Theo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0413a9b777828e65383a46d5c5cbe137}{%
+           family={Bhering},
+           familyi={B\bibinitperiod},
+           given={Davi},
+           giveni={D\bibinitperiod}}}%
+        {{hash=db56ac77e1c0f209938001e2d4f4fe74}{%
+           family={Scot},
+           familyi={S\bibinitperiod},
+           given={Thiago},
+           giveni={T\bibinitperiod}}}%
+        {{hash=1d34ab7e165e01f0d76770220229735c}{%
+           family={Bachas},
+           familyi={B\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=586349254c346ddb5af7007405392b5a}{%
+           family={Barcarolo},
+           familyi={B\bibinitperiod},
+           given={Luciana},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f97503395a80c146a332dd7c450c0a3f}{%
+           family={Campos},
+           familyi={C\bibinitperiod},
+           given={Celso},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b9213a8fdde81ba608a406826cb2485c}{%
+           family={Feinmann},
+           familyi={F\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a94492d57206b1c63fb9aac468548a00}{%
+           family={Moreira},
+           familyi={M\bibinitperiod},
+           given={Leonardo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=3b966b131eabccf3c6ecbdb6fe527f0c}{%
+           family={Zucman},
+           familyi={Z\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{ec6ecc7169ca23202d8aa14cce0393fa}
+      \strng{fullhash}{897ef5dc19ccd3717ecfee9a1fddf17e}
+      \strng{bibnamehash}{ec6ecc7169ca23202d8aa14cce0393fa}
+      \strng{authorbibnamehash}{ec6ecc7169ca23202d8aa14cce0393fa}
+      \strng{authornamehash}{ec6ecc7169ca23202d8aa14cce0393fa}
+      \strng{authorfullhash}{897ef5dc19ccd3717ecfee9a1fddf17e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We use population-wide administrative micro-data to provide new estimates of income inequality and effective tax rates by income groups in Brazil, capturing all income and all tax payments. Our data allow us to link businesses to their owners and thus to allocate business income and associated taxes to the corresponding individual firm owners. We provide sharp upward revisions to official inequality estimates: the top 1\% earns 27.4\% of total income in 2019, one of the highest level recorded in the world. The tax system, which relies heavily on consumption taxes, is regressive: while the average tax rate in the economy is 42.5\%, this rate falls to 20.6\% for million-dollar earners (roughly the top 0.01\% of the distribution), due to the non-taxation of dividends and provisions that reduce corporate tax liabilities. We provide evidence suggesting that inequality in developing countries may be systematically underestimated, as even in Brazil—where dividends are untaxed, and hence incentives to retain income within companies are limited—attributing profits to business owners substantially raises income inequality.}
+      \field{title}{Tax {Progressivity} and {Inequality} in {Brazil}: {Evidence} from {Integrated} {Administrative} {Data}}
+      \verb{file}
+      \verb PDF:/Users/lucasdubois/Zotero/storage/RPPWGGQ8/Palomo et al. - Tax Progressivity and Inequality in Brazil Evidence from Integrated Administrative Data.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{suarezetzidar}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5c9bed826722d23370f8238b632c32a4}{%
+           family={Serrato},
+           familyi={S\bibinitperiod},
+           given={Juan\bibnamedelimb Carlos\bibnamedelima Suárez},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=0c77ec0c2f1c248c1ce8111764ecbb62}{%
+           family={Zidar},
+           familyi={Z\bibinitperiod},
+           given={Owen},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{d724f751ca64398a247d27c42dfbf314}
+      \strng{fullhash}{d724f751ca64398a247d27c42dfbf314}
+      \strng{bibnamehash}{d724f751ca64398a247d27c42dfbf314}
+      \strng{authorbibnamehash}{d724f751ca64398a247d27c42dfbf314}
+      \strng{authornamehash}{d724f751ca64398a247d27c42dfbf314}
+      \strng{authorfullhash}{d724f751ca64398a247d27c42dfbf314}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper estimates the incidence of state corporate taxes on the welfare of workers, landowners, and firm owners using variation in state corporate tax rates and apportionment rules. We develop a spatial equilibrium model with imperfectly mobile firms and workers. Firm owners may earn profits and be inframarginal in their location choices due to differences in location-specific productivities. We use the reduced-form effects of tax changes to identify and estimate incidence as well as the structural parameters governing these impacts. In contrast to standard open economy models, firm owners bear roughly 40\% of the incidence, while workers and landowners bear 30-35\% and 25-30\%, respectively.}
+      \field{title}{Who {Benefits} from {State} {Corporate} {Tax} {Cuts}? {A} {Local} {Labor} {Markets} {Approach} with {Heterogeneous} {Firms}}
+      \verb{file}
+      \verb PDF:/Users/lucasdubois/Zotero/storage/NMTPVFTM/Serrato et Zidar - Who Benefits from State Corporate Tax Cuts A Local Labor Markets Approach with Heterogeneous Firms.pdf:application/pdf
       \endverb
     \endentry
   \enddatalist

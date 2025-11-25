@@ -15,8 +15,9 @@
 \addbibresource{/Users/lucasdubois/Desktop/LaTeX/MASTER/master.bib}
 
 %--------------Images----------------
-\graphicspath{{Images/}}
+\graphicspath{{/Users/lucasdubois/Desktop/LaTeX/MASTER/Images/}}
 
+\setbeamertemplate{frametitle continuation}{}
 % ---------------- Fonts ----------------
 \setsansfont{Fira Sans}[
   Ligatures=TeX,
@@ -39,7 +40,13 @@
 \definecolor{steelblue}{RGB}{171,193,223}
 \definecolor{offwhite}{RGB}{230,230,220}
 \definecolor{darkgreen}{RGB}{34,139,34}
+\definecolor{harmonizedblue}{RGB}{48,88,140}
 
+% ---------------- Items+Enumerate Color ----------------
+\setbeamercolor{enumerate item}{fg=harmonizedblue}
+\setbeamercolor{itemize item}{fg=harmonizedblue}
+
+% ---------------- Beamer Color Customization ----------------
 \setbeamercolor{background canvas}{bg=offwhite}
 \setbeamercolor{normal text}{fg=midnight}
 \setbeamercolor{title}{fg=midnight}
@@ -81,87 +88,118 @@
 \maketitle
 
 % ========== Outline ==========
-\begin{frame}{\textsc{Table of Contents}}
-  \vspace{1.0ex}
-  \tableofcontents
-\end{frame}
-
+%\begin{frame}{\textsc{Table of Contents}}
+  %\vspace{1.0ex}
+  %\tableofcontents
+%\end{frame}
+% ATTENTION: TOOK IT OUT FOR PRESENTING PURPOSES (TO PUT BACK LATER)
 % ================== Content ==================
-\section{\textsc{Context:}}
-\begin{frame}{\textsc{Brazilian Taxation and Inequality:}}
-Since the colonial period, Brazil has been characterized by high levels of income inequality:
+
+
+
+\begin{frame}{\textsc{The Brazilian Paradox, Taxation and Inequality:}}
+
+  \textsc{\color{harmonizedblue}Context:} \\
+  \medskip
+  Since the colonial period, Brazil has been characterized by high levels of income inequality:
   \begin{itemize}
-    \item \textcolor{primaryred}{Gini}: 0.51 (\textcolor{steelblue}{5th highest globally}).
+    \item \textcolor{primaryred}{Gini}: 0.51 (\textcolor{steelblue}{5th highest globally}) (2023).
     \item \textcolor{primaryred}{Wealth concentration:} Top 1\% owns \textcolor{steelblue}{48.4\%} of total wealth (\textcolor{steelblue}{1st globally}) (2022).
-    \item \textcolor{primaryred}{Regressive tax system:} \textcolor{steelblue}{42.5\%} Average tax rate of  vs. \textcolor{steelblue}{20.6\%} for million-dollar earners (\cite{zucmanpalomo}).
+    \item \textcolor{primaryred}{Regressive tax system:} \textcolor{steelblue}{42.5\%} average tax rate vs. \textcolor{steelblue}{20.6\%} for million-dollar earners (Palomo et al.\cite{zucmanpalomo}).
   \end{itemize}
-\textsc{\color{steelblue}But in 1995...} \\
+  \textsc{\color{harmonizedblue}And in 1995...} \\
+  \medskip
+  \begin{center}
+    \large
+    Dividend tax cut: \textcolor{primaryred}{25\%} ${\color{steelblue} \Rightarrow}$ \textbf{\color{primaryred}0\%}
+  \end{center}
+
 \end{frame}
 
-\begin{frame}{\textsc{Definition:}}
-    What is {\color{steelblue}\textbf{Machine Learning (ML)}}?
+
+\begin{frame}{\textsc{Research Question \& Literature :}}
+
+  \begin{center}
+   \textit{Did the 1995 \textcolor{primaryred}{dividend tax cut} in Brazil lead to an increase in \textcolor{primaryred}{top 1\% income inequality}?}
+  \end{center}
+  \medskip
+  \textsc{\color{harmonizedblue}Theoretical Framework:}
+  \begin{enumerate}
+    \item \textcolor{primaryred}{Saez-Chetty Agency Model} \cite{chetty_agency_2007} and \textcolor{primaryred}{Suarez-Zidar Static Spatial Equilibrium Model} \cite{suarezetzidar}: Dividend tax cuts ${\color{steelblue}\Rightarrow}$  increase payouts \& capital income ${\color{steelblue}\Rightarrow}$  increase in capital-to-labor income inequality.   
+  \end{enumerate}  
+  \medskip
+  \textsc{\color{harmonizedblue}Key Studies:}
     \begin{enumerate}
-        \item {\color{primaryred}High-dimensional models.}
-        \begin{itemize}
-            \item[\textcolor{darkgreen}{\ding{51}}] Flexibility.
-            \item[\textcolor{red}{\ding{55}}] Overfitting.
-        \end{itemize}
-        \item {\color{primaryred}“Regularization” methods for model selection.}
-            \begin{itemize}
-                \item[\textcolor{darkgreen}{\ding{51}}] Fix Overfitting.
-            \end{itemize}
-        \item {\color{primaryred}Efficient algorithms for searching model specifications.}
-            \begin{itemize}
-                \item[\textcolor{darkgreen}{\ding{51}}] Fix non-linearities.
-            \end{itemize}
+      \item \textcolor{primaryred}{Nallareddy et al.} \cite{nallareddy2021corporate}: \textcolor{harmonizedblue}{effect of corporate income on income inequality} in the US using \textcolor{steelblue}{DiD + Synthetic Control Method (SCM)}.
+      \item \textcolor{primaryred}{Berman and Klor} \cite{berman2024capital}: \textcolor{harmonizedblue}{effect 2017 dividend tax cut on top-income inequality} in Israel.
     \end{enumerate}
 \end{frame}
 
+\begin{frame}{\textsc{Database \& Methods:}}
 
-\begin{frame}{\textsc{Dataset and Metrics:}}
-    \begin{itemize}
-        \item {\color{primaryred}\textbf{Universe:}} Monthly U.S. equities (CRSP/Compustat)
-        \item {\color{primaryred}\textbf{Sample:}} {\color{steelblue}\textbf{30,000 individual stocks}}.
-        \item {\color{primaryred}\textbf{Period:}} {\color{steelblue}\textbf{60 years}} (1957–2016)
-        \item {\color{primaryred}\textbf{Predictors:}} {\textbf{94 firm-level characteristics}} from the "factor zoo" + {\textbf{74 industry-sector dummies}} + interaction terms.
-        \begin{itemize}
-            \item {\color{steelblue} \textbf{900+ predictors}} in total.
-        \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\section{\textsc{Results:}}
-\section{\textsc{Wrap-up}}
-\begin{frame}{Conclusion}
+  \textsc{\color{harmonizedblue}Database:}
   \begin{itemize}
-    \item Using a single, thicker Metropolis section progress bar.
-    \item Clean frametitles with no extra progress line on content slides.
-    \item Palette and typography unchanged.
+      \item \textcolor{primaryred}{WID Database:} Provides the top 1\% income shares for several countries.
+      \item \textcolor{primaryred}{World Bank \& IMF:} Control variables (GDP growth, unemployment, inflation, etc.).
+      \item \textcolor{primaryred}{Morgan and Souza:} \cite{morgan2025distribution} Complementary data for Brazilian income shares.
   \end{itemize}
-\end{frame}
 
-\section{\textsc{Hello}}
-\begin{frame}{Conclusion}
+  \medskip
+
+  \textsc{\color{harmonizedblue}The SCM Approach:}
   \begin{itemize}
-    \item Using a single, thicker Metropolis section progress bar.
-    \item Clean frametitles with no extra progress line on content slides.
-    \item Palette and typography unchanged.
+      \item Due to \textcolor{primaryred}{Abadie and Gardeazabal} \cite{abadie2003economic} and further developed in \textcolor{primaryred}{Abadie et al.} \cite{abadie2010synthetic}.
+      \item \textcolor{harmonizedblue}{... with ML:}
+      \begin{itemize}
+        \item[\textcolor{darkgreen}{\ding{51}}] Helps with \textcolor{steelblue}{overfitting and sparsity} (e.g. Lasso regularization- see \textcolor{primaryred}{Abadie and L'Hour} \cite{abadie_penalized_2021}).
+        \item[\textcolor{darkgreen}{\ding{51}}] Accounts for potential \textcolor{steelblue}{non-linearities} in predictor-outcome relationships ( Araujo \cite{araujo2023synthetic}).
+        \item[\textcolor{darkgreen}{\ding{51}}] Offers a nice way to test \textcolor{steelblue}{robustness} of results.
+      \end{itemize}
   \end{itemize}
+
 \end{frame}
 
 
-\section{\textsc{Hello again}}
-\begin{frame}{Conclusion}
-  \begin{itemize}
-    \item Using a single, thicker Metropolis section progress bar.
-    \item Clean frametitles with no extra progress line on content slides.
-    \item Palette and typography unchanged.
-  \end{itemize}
+\begin{frame}{\textsc{Top 1\% Income Share in Brazil:}}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{top1inc.png}
+        \label{fig:top1income}
+    \end{figure}
+
 \end{frame}
 
-\begin{frame}{\textsc{References:}}
-   \printbibliography[heading=none]
+\begin{frame}{\textsc{Challenges \& Limitations:}}
+
+  \textsc{\color{harmonizedblue} Threefold Challenges:}
+  \[
+  \begin{cases}
+    \textsc{\color{steelblue}{Data:}} 
+      & \text{Disaggregated tax data + incomplete income data} \\[0.4em]
+    \textsc{\color{steelblue}{Object:}} 
+      & \text{Inequality } \Rightarrow \text{ \emph{highly} {\color{primaryred} endogenous} and complex} \\[0.4em]
+    \textsc{\color{steelblue}{Method:}} 
+      & \text{SCM } \Rightarrow \text{Counterfactual assumption + Idiosyncratic shocks}
+  \end{cases}
+  \]
+
+  \medskip
+
+  \textbf{\color{primaryred} Unlikely to find an undisputed result}
+  
+  \begin{flushright}
+    \textbf{\color{primaryred} ... but perhaps a good contribution?}
+  \end{flushright}
+
 \end{frame}
+
+\begin{frame}[allowframebreaks]{\textsc{References:}}
+    \tiny
+    % Print first X entries
+    \printbibliography[heading=none]
+\end{frame}
+
 
 {
 \setbeamercolor{background canvas}{bg=midnight}
