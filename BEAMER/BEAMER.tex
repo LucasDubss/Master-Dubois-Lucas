@@ -1,6 +1,7 @@
-% !TeX program = xelatex
-\documentclass[11pt,aspectratio=169]{beamer}
+% !TeX program = xelatex (if the compiler is set to pdflatex, change it!)
 
+%=====================================================================
+\documentclass[11pt,aspectratio=169]{beamer}
 \usetheme{metropolis}
 \usepackage{fontspec}
 \usepackage{appendixnumberbeamer} % for \inserttotalframenumber
@@ -9,7 +10,13 @@
 \usepackage{pifont}
 \usepackage{xcolor}
 \usepackage[backend=biber]{biblatex}
+
+%---------------- Bibliography ----------------
 \addbibresource{/Users/lucasdubois/Desktop/LaTeX/MASTER/master.bib}
+
+%--------------Images----------------
+\graphicspath{{Images/}}
+
 % ---------------- Fonts ----------------
 \setsansfont{Fira Sans}[
   Ligatures=TeX,
@@ -21,8 +28,8 @@
 ]
 \setmonofont{Fira Mono}[Scale=MatchLowercase]
 
-\title{\textsc{Empirical Asset Pricing via Machine Learning}}
-\author{Myriam Lamborelle \& Lucas Dubois}
+\title{\textsc{Dividend Taxation and Top-Income Inequality in Brazil}}
+\author{Lucas Dubois}
 \institute{HEC Liège}
 \date{\today}
 
@@ -80,14 +87,15 @@
 \end{frame}
 
 % ================== Content ==================
-\section{\textsc{Introduction:}}
-
-\begin{frame}{\textsc{Objectives:}}
-    The paper {\color{primaryred}"Empirical Asset Pricing via Machine Learning"} has a twofold objective \cite{abadie2003economic}
-  \begin{enumerate}
-   \item Setting a {\color{steelblue} new benchmarks} to compare ML methods for asset pricing.
-   \item Synthesizing the {\color{steelblue}asset pricing theory} with the emerging {\color{steelblue} ML literature}.
-  \end{enumerate}
+\section{\textsc{Context:}}
+\begin{frame}{\textsc{Brazilian Taxation and Inequality:}}
+Since the colonial period, Brazil has been characterized by high levels of income inequality:
+  \begin{itemize}
+    \item \textcolor{primaryred}{Gini}: 0.51 (\textcolor{steelblue}{5th highest globally}).
+    \item \textcolor{primaryred}{Wealth concentration:} Top 1\% owns \textcolor{steelblue}{48.4\%} of total wealth (\textcolor{steelblue}{1st globally}) (2022).
+    \item \textcolor{primaryred}{Regressive tax system:} \textcolor{steelblue}{42.5\%} Average tax rate of  vs. \textcolor{steelblue}{20.6\%} for million-dollar earners (\cite{zucmanpalomo}).
+  \end{itemize}
+\textsc{\color{steelblue}But in 1995...} \\
 \end{frame}
 
 \begin{frame}{\textsc{Definition:}}
