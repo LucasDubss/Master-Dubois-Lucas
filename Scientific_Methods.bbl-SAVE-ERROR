@@ -211,17 +211,17 @@
       \verb https://journal.uii.ac.id/JEP/article/view/8947
       \endverb
     \endentry
-    \entry{araujo2023synthetic}{report}{}
+    \entry{araujo2023synthetic}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=35b64c27baa17486324a062f6a42fe8d}{%
            family={Araujo},
            familyi={A\bibinitperiod},
-           given={Douglas\bibnamedelimb K.\bibnamedelimi G.},
+           given={Douglas\bibnamedelimb K\bibnamedelima G},
            giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim G\bibinitperiod},
            givenun=0}}%
       }
-      \list{institution}{1}{%
-        {Bank for International Settlements}%
+      \list{language}{1}{%
+        {en}%
       }
       \strng{namehash}{35b64c27baa17486324a062f6a42fe8d}
       \strng{fullhash}{35b64c27baa17486324a062f6a42fe8d}
@@ -231,21 +231,69 @@
       \strng{authorfullhash}{35b64c27baa17486324a062f6a42fe8d}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Synthetic control methods are a data-driven way to calculate counterfactuals from control individuals for the estimation of treatment effects in many settings of empirical importance. In canonical implementations, this weighting is linear and the key methodological steps of donor pool selection and covariate comparison between the treated entity and its synthetic control depend on some degree of subjective judgment. Thus current methods may not perform best in settings with large datasets or when the best synthetic control is obtained by a nonlinear combination of donor pool individuals. This paper proposes “machine controls”, synthetic controls based on automated donor pool selection through clustering algorithms, supervised learning for flexible non-linear weighting of control entities and manifold learning to confirm numerically whether the synthetic control indeed resembles the target unit. The machine controls method is demonstrated with the effect of the 2017 labour deregulation on worker productivity in Brazil. Contrary to policymaker expectations at the time of enactment of the reform, there is no discernible effect on worker productivity. This result points to the deep challenges in increasing the level of productivity, and with it, economic welfare. JEL: B41, C32, C54, E24, J50, J83, O47. Keywords: causal inference, synthetic controls, machine learning, labour reforms, productivity.}
+      \field{title}{Synthetic controls with machine learning: application on the effect of labour deregulation on worker productivity in {Brazil}}
+      \verb{file}
+      \verb PDF:/Users/lucasdubois/Zotero/storage/ZTEUWFN3/Araujo - Synthetic controls with machine learning application on the effect of labour deregulation on worker.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{atkinson_design_1976}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b94caa0ee9e9cc58c95f595a1c07d53a}{%
+           family={Atkinson},
+           familyi={A\bibinitperiod},
+           given={A.B.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edc6f9b1de0433d01472583c6f47ae83}{%
+           family={Stiglitz},
+           familyi={S\bibinitperiod},
+           given={J.E.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{29d32f082278fd03551f8e91bed3062e}
+      \strng{fullhash}{29d32f082278fd03551f8e91bed3062e}
+      \strng{bibnamehash}{29d32f082278fd03551f8e91bed3062e}
+      \strng{authorbibnamehash}{29d32f082278fd03551f8e91bed3062e}
+      \strng{authornamehash}{29d32f082278fd03551f8e91bed3062e}
+      \strng{authorfullhash}{29d32f082278fd03551f8e91bed3062e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{10}
-      \field{number}{1127}
-      \field{title}{Synthetic Controls with Machine Learning: Application on the Effect of Labour Deregulation on Worker Productivity in Brazil}
-      \field{type}{BIS Working Paper}
-      \field{year}{2023}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{00472727}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{month}{7}
+      \field{number}{1-2}
+      \field{shorttitle}{The design of tax structure}
+      \field{title}{The design of tax structure: {Direct} versus indirect taxation}
+      \field{urlday}{31}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{volume}{6}
+      \field{year}{1976}
+      \field{urldateera}{ce}
+      \field{pages}{55\bibrangedash 75}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/0047-2727(76)90041-4
+      \endverb
       \verb{urlraw}
-      \verb https://www.bis.org/publ/work1127.htm
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0047272776900414
       \endverb
       \verb{url}
-      \verb https://www.bis.org/publ/work1127.htm
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0047272776900414
       \endverb
     \endentry
     \entry{berman2024capital}{report}{}
@@ -292,6 +340,63 @@
       \endverb
       \verb{url}
       \verb https://www.nber.org/papers/w32136
+      \endverb
+    \endentry
+    \entry{chetty_agency_2007}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7a853740afbc544905334cf607b3cd51}{%
+           family={Chetty},
+           familyi={C\bibinitperiod},
+           given={Raj},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f040f5aac2c176810fed8b44b9c401a4}{%
+           family={Saez},
+           familyi={S\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \strng{namehash}{1363d919bd594b9d88197c4e1f33e977}
+      \strng{fullhash}{1363d919bd594b9d88197c4e1f33e977}
+      \strng{bibnamehash}{1363d919bd594b9d88197c4e1f33e977}
+      \strng{authorbibnamehash}{1363d919bd594b9d88197c4e1f33e977}
+      \strng{authornamehash}{1363d919bd594b9d88197c4e1f33e977}
+      \strng{authorfullhash}{1363d919bd594b9d88197c4e1f33e977}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{number}{w13538}
+      \field{title}{An {Agency} {Theory} of {Dividend} {Taxation}}
+      \field{urlday}{31}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2007}
+      \field{urldateera}{ce}
+      \field{pages}{w13538}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.3386/w13538
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nber.org/papers/w13538.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.nber.org/papers/w13538.pdf
       \endverb
     \endentry
     \entry{morgan2025distribution}{article}{}
@@ -382,6 +487,56 @@
       \endverb
       \verb{url}
       \verb https://www.journals.uchicago.edu/doi/full/10.1086/718950
+      \endverb
+    \endentry
+    \entry{piketty_distributional_nodate}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=125a3a980ec7ff459f2e77e8e82118b6}{%
+           family={Piketty},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f040f5aac2c176810fed8b44b9c401a4}{%
+           family={Saez},
+           familyi={S\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3b966b131eabccf3c6ecbdb6fe527f0c}{%
+           family={Zucman},
+           familyi={Z\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{b1661304aa5839ccff97c1122af0eb36}
+      \strng{fullhash}{53cf2c56938b5800e6d803a5e10eec21}
+      \strng{bibnamehash}{53cf2c56938b5800e6d803a5e10eec21}
+      \strng{authorbibnamehash}{53cf2c56938b5800e6d803a5e10eec21}
+      \strng{authornamehash}{b1661304aa5839ccff97c1122af0eb36}
+      \strng{authorfullhash}{53cf2c56938b5800e6d803a5e10eec21}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{22945}
+      \field{title}{Distributional National Accounts: Methods and Estimates for the United States}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.3386/w22945
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nber.org/papers/w22945
+      \endverb
+      \verb{url}
+      \verb https://www.nber.org/papers/w22945
       \endverb
     \endentry
     \entry{roine2009long}{article}{}
@@ -629,17 +784,17 @@
       \verb https://journal.uii.ac.id/JEP/article/view/8947
       \endverb
     \endentry
-    \entry{araujo2023synthetic}{report}{}
+    \entry{araujo2023synthetic}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=35b64c27baa17486324a062f6a42fe8d}{%
            family={Araujo},
            familyi={A\bibinitperiod},
-           given={Douglas\bibnamedelimb K.\bibnamedelimi G.},
+           given={Douglas\bibnamedelimb K\bibnamedelima G},
            giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim G\bibinitperiod},
            givenun=0}}%
       }
-      \list{institution}{1}{%
-        {Bank for International Settlements}%
+      \list{language}{1}{%
+        {en}%
       }
       \strng{namehash}{35b64c27baa17486324a062f6a42fe8d}
       \strng{fullhash}{35b64c27baa17486324a062f6a42fe8d}
@@ -649,21 +804,69 @@
       \strng{authorfullhash}{35b64c27baa17486324a062f6a42fe8d}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Synthetic control methods are a data-driven way to calculate counterfactuals from control individuals for the estimation of treatment effects in many settings of empirical importance. In canonical implementations, this weighting is linear and the key methodological steps of donor pool selection and covariate comparison between the treated entity and its synthetic control depend on some degree of subjective judgment. Thus current methods may not perform best in settings with large datasets or when the best synthetic control is obtained by a nonlinear combination of donor pool individuals. This paper proposes “machine controls”, synthetic controls based on automated donor pool selection through clustering algorithms, supervised learning for flexible non-linear weighting of control entities and manifold learning to confirm numerically whether the synthetic control indeed resembles the target unit. The machine controls method is demonstrated with the effect of the 2017 labour deregulation on worker productivity in Brazil. Contrary to policymaker expectations at the time of enactment of the reform, there is no discernible effect on worker productivity. This result points to the deep challenges in increasing the level of productivity, and with it, economic welfare. JEL: B41, C32, C54, E24, J50, J83, O47. Keywords: causal inference, synthetic controls, machine learning, labour reforms, productivity.}
+      \field{title}{Synthetic controls with machine learning: application on the effect of labour deregulation on worker productivity in {Brazil}}
+      \verb{file}
+      \verb PDF:/Users/lucasdubois/Zotero/storage/ZTEUWFN3/Araujo - Synthetic controls with machine learning application on the effect of labour deregulation on worker.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{atkinson_design_1976}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b94caa0ee9e9cc58c95f595a1c07d53a}{%
+           family={Atkinson},
+           familyi={A\bibinitperiod},
+           given={A.B.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edc6f9b1de0433d01472583c6f47ae83}{%
+           family={Stiglitz},
+           familyi={S\bibinitperiod},
+           given={J.E.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{29d32f082278fd03551f8e91bed3062e}
+      \strng{fullhash}{29d32f082278fd03551f8e91bed3062e}
+      \strng{bibnamehash}{29d32f082278fd03551f8e91bed3062e}
+      \strng{authorbibnamehash}{29d32f082278fd03551f8e91bed3062e}
+      \strng{authornamehash}{29d32f082278fd03551f8e91bed3062e}
+      \strng{authorfullhash}{29d32f082278fd03551f8e91bed3062e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{10}
-      \field{number}{1127}
-      \field{title}{Synthetic Controls with Machine Learning: Application on the Effect of Labour Deregulation on Worker Productivity in Brazil}
-      \field{type}{BIS Working Paper}
-      \field{year}{2023}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{00472727}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{month}{7}
+      \field{number}{1-2}
+      \field{shorttitle}{The design of tax structure}
+      \field{title}{The design of tax structure: {Direct} versus indirect taxation}
+      \field{urlday}{31}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{volume}{6}
+      \field{year}{1976}
+      \field{urldateera}{ce}
+      \field{pages}{55\bibrangedash 75}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/0047-2727(76)90041-4
+      \endverb
       \verb{urlraw}
-      \verb https://www.bis.org/publ/work1127.htm
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0047272776900414
       \endverb
       \verb{url}
-      \verb https://www.bis.org/publ/work1127.htm
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0047272776900414
       \endverb
     \endentry
     \entry{berman2024capital}{report}{}
@@ -710,6 +913,63 @@
       \endverb
       \verb{url}
       \verb https://www.nber.org/papers/w32136
+      \endverb
+    \endentry
+    \entry{chetty_agency_2007}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7a853740afbc544905334cf607b3cd51}{%
+           family={Chetty},
+           familyi={C\bibinitperiod},
+           given={Raj},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f040f5aac2c176810fed8b44b9c401a4}{%
+           family={Saez},
+           familyi={S\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \strng{namehash}{1363d919bd594b9d88197c4e1f33e977}
+      \strng{fullhash}{1363d919bd594b9d88197c4e1f33e977}
+      \strng{bibnamehash}{1363d919bd594b9d88197c4e1f33e977}
+      \strng{authorbibnamehash}{1363d919bd594b9d88197c4e1f33e977}
+      \strng{authornamehash}{1363d919bd594b9d88197c4e1f33e977}
+      \strng{authorfullhash}{1363d919bd594b9d88197c4e1f33e977}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{number}{w13538}
+      \field{title}{An {Agency} {Theory} of {Dividend} {Taxation}}
+      \field{urlday}{31}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2007}
+      \field{urldateera}{ce}
+      \field{pages}{w13538}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.3386/w13538
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nber.org/papers/w13538.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.nber.org/papers/w13538.pdf
       \endverb
     \endentry
     \entry{morgan2025distribution}{article}{}
@@ -800,6 +1060,56 @@
       \endverb
       \verb{url}
       \verb https://www.journals.uchicago.edu/doi/full/10.1086/718950
+      \endverb
+    \endentry
+    \entry{piketty_distributional_nodate}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=125a3a980ec7ff459f2e77e8e82118b6}{%
+           family={Piketty},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f040f5aac2c176810fed8b44b9c401a4}{%
+           family={Saez},
+           familyi={S\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3b966b131eabccf3c6ecbdb6fe527f0c}{%
+           family={Zucman},
+           familyi={Z\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{b1661304aa5839ccff97c1122af0eb36}
+      \strng{fullhash}{53cf2c56938b5800e6d803a5e10eec21}
+      \strng{bibnamehash}{53cf2c56938b5800e6d803a5e10eec21}
+      \strng{authorbibnamehash}{53cf2c56938b5800e6d803a5e10eec21}
+      \strng{authornamehash}{b1661304aa5839ccff97c1122af0eb36}
+      \strng{authorfullhash}{53cf2c56938b5800e6d803a5e10eec21}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{22945}
+      \field{title}{Distributional National Accounts: Methods and Estimates for the United States}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.3386/w22945
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nber.org/papers/w22945
+      \endverb
+      \verb{url}
+      \verb https://www.nber.org/papers/w22945
       \endverb
     \endentry
     \entry{roine2009long}{article}{}

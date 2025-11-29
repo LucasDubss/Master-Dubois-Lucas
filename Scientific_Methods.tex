@@ -47,79 +47,236 @@
 
 \begin{center}
     \begin{spacing}{1.75}
-        {\LARGE \textsc{Development Plan}: The Role of Dividend Taxation in Top Income Inequality in Brazil}
+        {\huge \textsc{Development Plan}: The Role of Dividend Taxation in Top Income Inequality in Brazil}
         \vspace{0.25cm}
     \end{spacing}
     \large{Lucas Dubois}\\
     (s216283)
 \end{center}
 \section{\textsc{Context:}}
-\hspace{1cm}In 1995, Brazil eliminated its dividend taxes, arguing that double taxation of corporate profits hindered growth and distorted capital allocation.
+In 1995, Brazil eliminated its dividend taxes, arguing that double taxation of corporate profits hindered growth and distorted capital allocation.
 This tax policy, however, helped the consolidation of a very regressive tax system, in which the 85th percentile pays a higher average tax rate than the 99th by 2022. 
 Since then, inequality in Brazil has remained on the rise, confining the 7th most populous nation to a capital concentrating \textit{status quo}. 
 As of 2022, Brazil's Gini index is 53\%, making it the most unequal country in Latin America and among the top 10 globally\footnote{World Bank, 2022}.
 Brazil also has the highest wealth concentration worldwide: the top 1\% holds 48.4\% of national wealth\footnote{Global Wealth Report, 2023}.
+
+\section{\textsc{Research Question \& Development Plan:}}
+
+In light of the above context, my research question can be stated as:
+\begin{center}
+    \textit{What was the impact of the 1995 dividend tax cut on top-income inequality in Brazil?}
+\end{center}
+
+Moreover, the goal of this project is to contribute to the growing body of literature that investigates the relationship between capital taxation and income inequality, particularly in emerging economies.
+The \textbf{subject} of this thesis, i.e. top-income inequality, is a highly endogenous complex indicator, with multiple drivers and feedback loops, and the existing data is scarse and with only annual frequency.
+Therefore, this project is born from a difficult endeavor, and thus intends to play a humble role in improving our understanding of this topic.
+
 \par
-Considering the context of Brazil and the existing literature, I would like to dedicate my master’s thesis to understanding the drivers of top-income inequality in Brazil, with a particular focus on the role of dividend taxation in shaping income distribution.
-The objective is to create a solid quantitative approach to contribute to this subject.
-In first instance, regarding the availability of data (and therefore feasibility of this thesis), the database provided by \href{https://wid.world/country/brazil/}{WID} offers a plethora of time series indicators related to income distribution and inequality, which will be crucial for my analysis.
-In particular, the study by \cite{morgan2025distribution} presents an extensive analysis of the evolution of income, minimum wages, and wealth in Brazil over a 72-year period, by combining data from various official Brazilian agencies and other non-official microdata sources.
-Moreover, the authors provide a well-structured use of the raw data they compiled, along with a solid theoretical framework to understand the evolution of income and wealth in Brazil.
+The development plan of this thesis is structured around three complementary objectives.  
+First, I aim to provide a detailed historical reconstruction of Brazil’s capital taxation system around the 1995 reform, situating the elimination of dividend taxes within the broader macroeconomic conditions of the early post-inflation-stabilization period. This involves an examination of the competing narratives surrounding the reform: on the one hand, the government’s argument that double taxation discouraged investment; on the other, the growing literature suggesting that the reform contributed to a highly regressive tax system. By revisiting the political and economic motivations for the reform, this thesis will clarify whether the tax change was primarily efficiency-driven, ideologically motivated, or the result of fiscal and administrative constraints of the time.
+
 \par
-From a theoretical standpoint, a wide variety of models have attempted to explain the drivers of income inequality and the effects of capital taxation on income distribution, from neo-classical models with perfect competition to neo-keynesian models with sticky wages effects.
-Perhaps the most influential model and common framework for various empirical studies is the \cite{atkinson_design_1976}, that integrates asymetric information and heterogenous preferences to build a social welfare optimization problem.
-Regarding capital taxation, the model formalizes the redistributive role of capital taxes, while also considering the distortionary effects it could have on savings and investments.
+Second, the project aims to identify the mechanisms that may link dividend taxation to the evolution of Brazil’s top-income distribution. 
+These mechanisms may involve changes in firm payout behavior, increased scope for profit withdrawal by controlling shareholders, or shifts in portfolio composition among wealthy households.
+ The Chetty–Saez agency model will serve as a theoretical anchor for understanding how dividend taxation interacts with corporate governance frictions; however, the model must be adapted to Brazilian institutional realities, including high wealth concentration, historically weak enforcement capacity, and prevalence of closely held firms. 
+ The development plan therefore includes a conceptual extension of existing theory to capture mechanisms specifically relevant for Brazil.
 \par
-The Atkinson-Stiglitz model provides a sound foundation for optimal taxation theory, but economic theory has, since its publication, incorporated lessons from behavioral economics and empirical findings. 
-Also, this model does not consider dividend taxation separately, which is the main focus of my thesis.
-Thankfully, \cite{chetty_agency_2007}, two economists of same stature, have built a modern approach to dividend taxation that accounts for the agency problem: the notion that dividend taxes also influence the behavior of corporate managers that may reduce the pay-out ratio to avoid taxation (a value maximization problem).
-This model provides a more nuanced understanding of dividend taxation, demonstrating that dividends may not only serve as a redistributive tool, but also as a social optimization mechanism that reduces excessive pay-outs and encourages reinvestment within firms.
+Third, and most importantly, the thesis will empirically evaluate the causal effect of the dividend tax elimination. 
+Given the absence of internal counterfactuals (Brazil is a single treated unit), the methodological core of the project relies on the Synthetic Control Method (SCM) and its recent extensions. 
+The plan is to progressively build a synthetic Brazil using countries that resemble Brazil in their pre-1995 inequality dynamics, fiscal structure, and macroeconomic performance. 
+The donor pool will be selected through a transparent and data-driven process, and robustness checks, such as leave-one-out analyses, in-space and in-time placebos, and alternative predictor sets, will be systematically conducted. 
+\par
+A key component of the development plan is the integration of machine learning enhancements. 
+Penalized Synthetic Control (PSC) will be used to jointly match multiple inequality series (e.g., P50, P90, P99, top 1\%), addressing the multivariate nature of income distribution data. 
+Moreover, random forest algorithms and dimensionality reduction techniques may help identify which countries in the donor pool most closely mirror Brazil’s structural characteristics prior to the reform. 
+This integration of modern tools aims not to replace SCM, but to strengthen its predictive accuracy and reduce overfitting risks.
+\par
+Finally, the development plan envisions situating the empirical findings within broader debates on optimal taxation, fiscal justice, and inequality in developing countries. 
+The 1995 reform serves as a natural experiment with important policy implications: if eliminating dividend taxation contributed significantly to the rise of top-income inequality, this would support arguments for reintroducing progressive capital taxation or designing alternative mechanisms to discourage excessive capital concentration. 
+The thesis will therefore conclude by reflecting on the methodological limitations, potential biases, and the extent to which causal claims can be generalized beyond the Brazilian case.
+
+\newpage
+\section{\textsc{Agenda:}}
+
+\begin{enumerate}[leftmargin= 2cm]
+    \item Introduction and Historical Context
+    \begin{enumerate}
+        \item Brazil before dividend tax elimination
+        \item The Plano Real and macroeconomic stabilization
+        \item The 1995 reform and its long-run fiscal implications
+    \end{enumerate}
+
+    \item Theoretical Framework
+    \begin{enumerate}
+        \item Optimal taxation and capital income
+        \item The Chetty-Saez agency model of dividend taxation
+        \item Testable predictions for top-income inequality
+    \end{enumerate}
+
+    \item Database
+    \begin{enumerate}
+        \item World Inequality Database (WID)
+        \item World Bank Indicators
+        \item Morgan and Souza (2025) Brazil dataset
+    \end{enumerate}
+
+    \item Methodology
+    \begin{enumerate}
+        \item Synthetic Control Method (SCM)
+        \item Machine Learning enhancements
+        \begin{enumerate}
+            \item Random Forests
+            \item Penalized Regression (LASSO / Elastic Net)
+            \item Neural Networks
+            \item Principal Components / Dimensionality Reduction
+        \end{enumerate}
+    \end{enumerate}
+
+    \item Robustness Checks and Validation
+    \begin{enumerate}
+        \item Placebo tests (in-space and in-time)
+        \item Leave-one-out analyses
+        \item Alternative outcome variables
+        \item Sensitivity to model architecture and ML hyperparameters
+    \end{enumerate}
+
+    \item Conclusion
+    \begin{enumerate}
+        \item Main takeaways
+        \item Policy implications with methodological humility
+        \item Directions for future research
+    \end{enumerate}
+\end{enumerate}
+
+\newpage
+\section{\textsc{Literature Review:}}
+\subsection{Theoretical Framework }
+\par
+A fundamental starting point in public finance is the \cite{atkinson_design_1976} model. 
+The authors investigate whether governments should impose differentiated taxes on commodities or income to maximize social welfare. 
+Under certain conditions, namely homothetic and separable preferences, they show that non-linear income taxation is sufficient to achieve redistributive objectives, implying that differentiated capital taxation could be unnecessary.
+
+\par
+Yet, real-world deviations from the model’s assumptions (heterogeneous savings propensities, capital market imperfections) justify capital taxation as a redistributive tool. 
+In particular, the Atkinson–Stiglitz framework suggests that when high-income households derive a disproportionate share of their income from capital, taxing returns (including dividends) can reduce inequality without excessively distorting investment decisions.
+
+\par
+
+A major theoretical limitation of neo-classical models is their limited treatment of firms’ internal decision-making. 
+The brilliant paper \cite{chetty_agency_2007} addresses this gap by incorporating agency theory in a model of dividend taxation. 
+They argue that managers can manipulate payout policies to influence their value maximation problem (without accounting for shareholders’ interests).
+Under this framework, firms may over-invest or under-invest relative to the social optimum due to the presence of an agency conflict of interest.
+Dividend taxes can, therefore, improve efficiency by discouraging such excessive payouts and encouraging reinvestment.
+
+Their framework predicts two mechanisms relevant to inequality:
+
+\begin{itemize}[leftmargin= 2cm]
+    \item High-income individuals (major shareholders) adjust payout behavior when dividend taxes change.
+    \item Firms’ investment strategies are affected, influencing long-run productivity and income distribution.
+    \item This approach is especially useful for Brazil, where dividend exemptions may encourage high withdrawals and retained earnings among the wealthiest, reinforcing top-income concentration.
+\end{itemize}
+
+\par
+Nonetheless, their model focuses the welfare analysis on overall efficiency and does not explicitly model income distribution effects, meaning their scope is limited for my research question, but the mechanisms they identify may well be developed further in order to analyze inequality dynamics.
+\subsection{ Empirical Analysis on Inequality:}
+
+\par
+The broader literature on inequality dynamics provides important insights. \cite{roine2009long} show that income inequality tends to rise in periods of low capital taxation, financial liberalization, and economic openness. 
+These long-run determinants help identify relevant controls for empirical analysis, but also highlights an fundamental challenge: inequality is highly multifactorial, fundamentally endogenous, and subject to long-term trends and shocks.
+
+Similarly, \cite{piketty_distributional_nodate} DINA's methodology for constructing distributional national accounts is crucial for measuring top-income shares accurately, as well as understanding the aggregations and adjustments needed for cross-country comparisons.
+
+\subsection{Empirical Literature on Taxation and Inequality}
+
+\par
+\cite{berman2024capital} study the effect of dividend taxation reforms in Israel. 
+They exploit both a tax increase and a tax reduction, documenting highly asymmetric responses:
+
+\begin{itemize}[leftmargin= 2cm]
+    \item A dividend tax cut leads to immediate increases in withdrawals among the top 1\%, while lower incomes show no reaction.
+    \item A dividend tax increase stabilizes the concentration of top incomes over time.
+\end{itemize}
+
+\par
+Importantly, they show that responses materialize with a lag, consistent with adjustment costs and expectations. 
+Their findings support the Chetty-Saez mechanism: tax policy influences corporate payout decisions and thus shapes inequality at the top.
+
+\par
+Additionally, the study by \cite{nallareddy2021corporate} serves as a major inspiration for this thesis.
+In paper, they examine how corporate tax cuts affect inequality across U.S. states. 
+They apply three complementary methods:
+
+\begin{itemize}[leftmargin= 2cm]
+    \item Differences-in-differences
+    \item Logistic regression
+    \item Synthetic control method (SCM)
+\end{itemize}
+
+\par
+All three converge on the result that corporate tax cuts increase top-income inequality but within a few years. 
+Their finding that a 0.5-point tax cut explains around 7.4\% of the rise in top-1\% income share highlights the magnitude of capital-tax policies.
+
+\par
+This paper demonstrates the relevance of SCM and justifies its use in single-treated-unit contexts such as Brazil.
+
+\subsection{The Brazilian Context:}
+
+\par
+According to \cite{morgan2025distribution}, Brazil exhibits a remarkable persistence of inequality over more than seven decades. 
+They compile data from multiple statistical agencies and argue that Brazil’s distributional dynamics are strongly affected by:
+
+\begin{itemize}[leftmargin= 2cm]
+    \item Institutional features (labor market segmentation, low minimum wages in earlier decades)
+    \item Political regime changes
+    \item Tax system structure (including the 1995 dividend tax elimination)
+\end{itemize}
+
+\par
+Their work provides the empirical context and raw data foundations for my thesis (as the data available is in the WID is limited for pre-1990 years).
+
+\pagebreak 
+
+\subsection{The Synthetic Control Method}
+\par
+The Synthetic Control Method is due to \cite{abadie2003economic} and later formalized by \cite{abadie2010synthetic}. 
+It constructs a “synthetic” comparison group as a weighted average of units that best replicate the treated unit’s pre-treatment trajectory.
+Advantages include:
+
+\begin{itemize}[leftmargin= 1.5cm]
+    \item Transparent, data-driven weight selection
+    \item Good performance in small-sample (“vertical”) causal inference
+    \item Clear visualization of treatment effects
+    \item Widely used in policy evaluation, particularly when randomized or large-N methods are infeasible
+\end{itemize}
+
+\par
+But on the other hand, the SCM relies on strong (and often hardly verifiable) assumptions:
+\begin{itemize}[leftmargin= 2cm]
+    \item No interference between units 
+    \item Convex combination of controls can approximate treated unit
+    \item No time-varying unobserved confounders
+\end{itemize}
+
+\par
+In recent years, several extensions have been proposed to address SCM limitations. 
+Particularly, machine learning methods, known for their predictive power and flexibility, have been integrated into SCM framework in order to improve donor selection, weight optimization, and robustness checks.
+\cite{abadie2023penalized} offers a very important contribuition to this thesis.
+Income distribution data is naturally multivariate, with outcomes such as deciles, percentiles, and top income shares evolving together.
+ Standard synthetic control can only match one outcome at a time (e.g., the top 1\% share), which produces unstable and unrealistic counterfactuals for the rest of the distribution. 
+ The Penalized Synthetic Control (PSC) estimator is specifically designed for this situation: it jointly matches all distribution components (e.g., P10, P50, P90, P99, top 1\%) by estimating one set of donor weights that fit the entire vector of pre-treatment outcomes. 
+ Penalization stabilizes those weights and prevents overfitting, which is especially important because percentile series are often noisy and correlated.
+
+ \par
+Moreover, another well-designed insightful paper by \cite{araujo2023synthetic} provides insights on the benefits and challenges of integrating machine learning into SCM.
+Additionally, he uses a random forest algorithm to select donor units that are most similar to the treated unit based on pre-treatment characteristics and outcomes (and in the same country).
+
+\medskip
+
+\textbf{WORD COUNT: 2015}
+
 \pagebreak
-\par
-When it comes to empirical analysis, likewise, several studies have attempted to understand the role of taxation on top income inequality. 
-Particularly, \cite{berman2024capital} investigate the impact of dividend taxes on top income inequality in Israel, investigating both a tax increase and a tax decrease. 
-They find that this tax decrease impacts almost immediately the rate of withdrawals from retained earnings, particularly among the top percentile of income earners.
-This highligths the relationship between tax policies and corporate behavior, as predicted by the Chetty-Saez framework, suggesting the necessity of robust methods for estimating and aggregating data on income distribution, similar to \cite{piketty_distributional_nodate}.
-\par
-Moreover, the authors find that the tax increase stabilizes top-income the levels inequality.
-Using a panel regression, the paper provides an insight to the exact dynamics responsable for this: during subsequent years, growth was more homogenously distributed, conversely to the pre-tax trend of accumulation. 
-The short-lived tax relief, nonetheless, did not produce any effect on top-income inequality, highlights the relationship the complex and long-term nature of income distribution dynamics, which must also be taken into account.
-The authors reiterate the important role of dividend taxation in shaping income distribution, particularly among the top income earners.
-\par
-Similarly, \cite{nallareddy2021corporate} study the effects of corporate taxes on income inequality across US states.
-The authors provide a very holistic and sophisticated approach to this issue, constructing a solid framework for the subject.
-Since inequality is a complex multi-factorial phenomenon, the authors first address the issue of endogeneity and reverse causality, which are common in this type of analysis.
-They conduct three sets of tests to ensure validity of the analysis, and control the regressions to ensure the absence of confounding factors.
-\par
-Furthermore, the authors use three different models to assess the impact of corporate taxes on income inequality: a differences-in-differences (DiD) model, a logistic regression model and a Synthetic Control Method (SCM).
-Altogether, the results of the different models offer a robust finding that corporate tax cuts do lead to increases in income inequality, particularly among the top income earners.
-More specifically, they estimate that a state corporate tax cut of 0.5pp would explain about 7.4\% of the average rise in the share of income accruing to the top 1\% between 1990 and 2010.
-This effect seems to only become significant three years after the tax cut, which is consistent with the findings of \cite{berman2024capital} regarding the delayed impact of tax changes on income distribution.
-\par    
-Since my main (intended) approach will be the Synthetic Control Method (SCM), it would be also fruitful to provide a overview of this method.
-The SCM is a quasi-experimental method used to estimate the causal effect of an intervention or treatment on a single unit (the treated unit) by constructing a synthetic control group from a weighted combination of control units. 
-This method is particularly useful when the number of treated units is small, as is the case for Brazil, and it provides a more grounded alternative that complements traditional methods by constructing robust counterfactuals.
-The SCM was formalized in \cite{abadie2003economic} and further developed in \cite{abadie2010synthetic}.
-To improve the model’s efficiency (and obviously avoid the blatant danger of OVBs) I will include a set of controls that capture the main determinants of income inequality, such as financial development, openness, government spending, and poverty rates, following the work by \cite{afandi2017determinants} and \cite{roine2009long}.
-\par
-Furthermore, in order to optimize the model’s performance, I will use Machine Learning techniques to construct the synthetic controls, as described by \cite{araujo2023synthetic}.
-This helps create sparse coefficients that identify the most relevant control units.
-Similarly, clustering algorithms will be used to group the control units, reducing the dimensionality of the model and improving its efficiency, while allowing for robustness testing of the results.
-This process is yet again demonstrated by \cite{abadie2023penalized}, who used penalized regression to estimate the synthetic control weights.
 
-\newpage
-
-\section*{References}
-
+\section{\textsc{References:}}
 \printbibliography[heading=none]
-\newpage
 
-\section*{Disclaimer AI}
-
-\hspace{1cm}During the process of writing this review, I used two different AI tools to assist me, namely ChatGPT and Github Copilot.
-I used ChatGPT during my reading of the literature to help me understand some key concepts and respond to some questions that troubled me (e.g., "Compare the SCM method and the DiD method", "Explain how Unsupervised ML could be used to improve the SCM method", etc.).
-I found it to be quite productive, as it adresses particular questions directly while providing the required details or context.
-At first, I also used ChatGPT to help me convert the references to \texttt{.bib} format (e.g., "Convert this reference to .bib format: ..."), but later I moved to $\mathbb{Z}$otero to manage my references even more efficiently.
-Throughout the writing, I used Github Copilot to help me assess and fix codes, since this document is written in \LaTeX\ locally.
-When I finished writing the document, I asked ChatGPT to check for any grammatical errors and make suggestions, but asking not to change my style.\footnote{"\{...\} mon sang se coagule en pensant qu’on y peut changer une virgule."}
 \end{document}
