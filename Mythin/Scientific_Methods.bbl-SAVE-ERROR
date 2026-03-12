@@ -160,57 +160,6 @@
       \verb https://www.jstor.org/stable/41348805
       \endverb
     \endentry
-    \entry{afandi2017determinants}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=2029d4f605db7f816ddf12fc4077e218}{%
-           family={Afandi},
-           familyi={A\bibinitperiod},
-           given={Akhsyim},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d8c1748129e545fdedb7bfe0e6c7edaa}{%
-           family={Rantung},
-           familyi={R\bibinitperiod},
-           given={Vebryna\bibnamedelima Permatasari},
-           giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d2cb1ef82cec38c024c95003baeed8d1}{%
-           family={Marashdeh},
-           familyi={M\bibinitperiod},
-           given={Hazem},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{41a850beac08bce15155016261733eb4}
-      \strng{fullhash}{1a8a8af801bd467ee88a45f8f2bb6556}
-      \strng{bibnamehash}{1a8a8af801bd467ee88a45f8f2bb6556}
-      \strng{authorbibnamehash}{1a8a8af801bd467ee88a45f8f2bb6556}
-      \strng{authornamehash}{41a850beac08bce15155016261733eb4}
-      \strng{authorfullhash}{1a8a8af801bd467ee88a45f8f2bb6556}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Economic Journal of Emerging Markets}
-      \field{number}{2}
-      \field{title}{Determinants of Income Inequality}
-      \field{volume}{9}
-      \field{year}{2017}
-      \field{pages}{159\bibrangedash 171}
-      \range{pages}{13}
-      \verb{doi}
-      \verb 10.20885/ejem.vol9.iss2.art5
-      \endverb
-      \verb{urlraw}
-      \verb https://journal.uii.ac.id/JEP/article/view/8947
-      \endverb
-      \verb{url}
-      \verb https://journal.uii.ac.id/JEP/article/view/8947
-      \endverb
-    \endentry
     \entry{araujo2023synthetic}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=35b64c27baa17486324a062f6a42fe8d}{%
@@ -231,12 +180,14 @@
       \strng{authorfullhash}{35b64c27baa17486324a062f6a42fe8d}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Synthetic control methods are a data-driven way to calculate counterfactuals from control individuals for the estimation of treatment effects in many settings of empirical importance. In canonical implementations, this weighting is linear and the key methodological steps of donor pool selection and covariate comparison between the treated entity and its synthetic control depend on some degree of subjective judgment. Thus current methods may not perform best in settings with large datasets or when the best synthetic control is obtained by a nonlinear combination of donor pool individuals. This paper proposes “machine controls”, synthetic controls based on automated donor pool selection through clustering algorithms, supervised learning for flexible non-linear weighting of control entities and manifold learning to confirm numerically whether the synthetic control indeed resembles the target unit. The machine controls method is demonstrated with the effect of the 2017 labour deregulation on worker productivity in Brazil. Contrary to policymaker expectations at the time of enactment of the reform, there is no discernible effect on worker productivity. This result points to the deep challenges in increasing the level of productivity, and with it, economic welfare. JEL: B41, C32, C54, E24, J50, J83, O47. Keywords: causal inference, synthetic controls, machine learning, labour reforms, productivity.}
       \field{title}{Synthetic controls with machine learning: application on the effect of labour deregulation on worker productivity in {Brazil}}
+      \field{year}{2023}
       \verb{file}
       \verb PDF:/Users/lucasdubois/Zotero/storage/ZTEUWFN3/Araujo - Synthetic controls with machine learning application on the effect of labour deregulation on worker.pdf:application/pdf
       \endverb
@@ -733,57 +684,6 @@
       \verb https://www.tandfonline.com/doi/full/10.1080/01621459.2021.1974911
       \endverb
     \endentry
-    \entry{afandi2017determinants}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=2029d4f605db7f816ddf12fc4077e218}{%
-           family={Afandi},
-           familyi={A\bibinitperiod},
-           given={Akhsyim},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d8c1748129e545fdedb7bfe0e6c7edaa}{%
-           family={Rantung},
-           familyi={R\bibinitperiod},
-           given={Vebryna\bibnamedelima Permatasari},
-           giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d2cb1ef82cec38c024c95003baeed8d1}{%
-           family={Marashdeh},
-           familyi={M\bibinitperiod},
-           given={Hazem},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{41a850beac08bce15155016261733eb4}
-      \strng{fullhash}{1a8a8af801bd467ee88a45f8f2bb6556}
-      \strng{bibnamehash}{1a8a8af801bd467ee88a45f8f2bb6556}
-      \strng{authorbibnamehash}{1a8a8af801bd467ee88a45f8f2bb6556}
-      \strng{authornamehash}{41a850beac08bce15155016261733eb4}
-      \strng{authorfullhash}{1a8a8af801bd467ee88a45f8f2bb6556}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Economic Journal of Emerging Markets}
-      \field{number}{2}
-      \field{title}{Determinants of Income Inequality}
-      \field{volume}{9}
-      \field{year}{2017}
-      \field{pages}{159\bibrangedash 171}
-      \range{pages}{13}
-      \verb{doi}
-      \verb 10.20885/ejem.vol9.iss2.art5
-      \endverb
-      \verb{urlraw}
-      \verb https://journal.uii.ac.id/JEP/article/view/8947
-      \endverb
-      \verb{url}
-      \verb https://journal.uii.ac.id/JEP/article/view/8947
-      \endverb
-    \endentry
     \entry{araujo2023synthetic}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=35b64c27baa17486324a062f6a42fe8d}{%
@@ -804,12 +704,14 @@
       \strng{authorfullhash}{35b64c27baa17486324a062f6a42fe8d}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Synthetic control methods are a data-driven way to calculate counterfactuals from control individuals for the estimation of treatment effects in many settings of empirical importance. In canonical implementations, this weighting is linear and the key methodological steps of donor pool selection and covariate comparison between the treated entity and its synthetic control depend on some degree of subjective judgment. Thus current methods may not perform best in settings with large datasets or when the best synthetic control is obtained by a nonlinear combination of donor pool individuals. This paper proposes “machine controls”, synthetic controls based on automated donor pool selection through clustering algorithms, supervised learning for flexible non-linear weighting of control entities and manifold learning to confirm numerically whether the synthetic control indeed resembles the target unit. The machine controls method is demonstrated with the effect of the 2017 labour deregulation on worker productivity in Brazil. Contrary to policymaker expectations at the time of enactment of the reform, there is no discernible effect on worker productivity. This result points to the deep challenges in increasing the level of productivity, and with it, economic welfare. JEL: B41, C32, C54, E24, J50, J83, O47. Keywords: causal inference, synthetic controls, machine learning, labour reforms, productivity.}
       \field{title}{Synthetic controls with machine learning: application on the effect of labour deregulation on worker productivity in {Brazil}}
+      \field{year}{2023}
       \verb{file}
       \verb PDF:/Users/lucasdubois/Zotero/storage/ZTEUWFN3/Araujo - Synthetic controls with machine learning application on the effect of labour deregulation on worker.pdf:application/pdf
       \endverb
