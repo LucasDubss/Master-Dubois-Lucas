@@ -47,7 +47,7 @@
 \setbeamercolor{itemize item}{fg=harmonizedblue}
 
 % ---------------- Beamer Color Customization ----------------
-\setbeamercolor{background canvas}{bg=offwhite}
+\setbeamercolor{background canvas}{bg=white}
 \setbeamercolor{normal text}{fg=midnight}
 \setbeamercolor{title}{fg=midnight}
 \setbeamercolor{subtitle}{fg=midnight!80}
@@ -199,11 +199,437 @@
 \end{figure}
 \end{frame}
 
+
+
+\begin{frame}{Summary of Variables:}
+  \begin{table}[H]
+    \centering
+    \small
+    \begin{tabular}{l r}
+    \toprule
+    \textbf{Statistic} & \textbf{Value} \\
+    \midrule
+    Number of rows & 1989 \\
+    Number of columns & 46 \\
+    Total non-missing cells & 82,495 \\
+    Total cells & 91,494 \\
+    Share of non-missing values & 0.9016 \\
+    Number of variables & 46 \\
+    Number of interaction terms & 15 \\
+    Number of ID variables & 2 \\
+    Number of years & 39 \\
+    First year & 1985 \\
+    Last year & 2023 \\
+    Number of countries & 51 \\
+    Number of numeric variables & 45 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{\textsc{Correlation Matrix:}}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{correlation_matrix.png}
+    \label{fig:correlationmatrix}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Descriptive Statistics:}    
+  \begin{table}[H]
+    \centering
+    \small
+    \begin{tabular}{l r r r r r r}
+    \toprule
+    \textbf{Variable} & \textbf{Mean} & \textbf{Median} & \textbf{Std. Dev.} & \textbf{Min} & \textbf{Max} & \textbf{N} \\
+    \midrule
+    inflation      & 11.35    & 3.33     & 101.26   & -4.45   & 2947.73   & 1989 \\
+    gdp\_per\_cap  & 21002.96 & 13165.08 & 22791.00 & 149.90  & 134965.82 & 1989 \\
+    rgdpe          & 1177285.01 & 349926.25 & 2691501.49 & 390.88 & 25641846.00 & 1872 \\
+    emp            & 26.19    & 7.65     & 66.78    & 0.02    & 670.03    & 1843 \\
+    avh            & 1884.89  & 1778.02  & 347.89   & 1313.57 & 2907.89   & 1549 \\
+    hc             & 2.76     & 2.88     & 0.67     & 1.18    & 3.99      & 1794 \\
+    ccon           & 887506.00 & 244583.88 & 2125529.55 & 430.23 & 20554382.00 & 1872 \\
+    cda            & 1180152.39 & 336155.50 & 2779778.61 & 493.08 & 26322130.00 & 1872 \\
+    cn             & 4718661.38 & 1362456.31 & 9920570.38 & 334.13 & 80823096.00 & 1872 \\
+    ck             & 0.08     & 0.02     & 0.17     & 0.00    & 1.00      & 1638 \\
+    ctfp           & 0.81     & 0.84     & 0.23     & 0.11    & 1.48      & 1638 \\
+    cwtfp          & 0.77     & 0.80     & 0.21     & 0.10    & 1.53      & 1638 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{A Synthetic Control Method:}
+  \begin{align*}
+    {\color{primaryred}\min_{w}} \quad 
+    {\color{primaryred}\| y_{1,\text{pre}} - X_{0,\text{pre}} w \|^2}
+    \\
+    \text{s.t.} \quad 
+    {\color{steelblue}w_j \ge 0 \quad \forall j,}
+    \quad 
+    {\color{harmonizedblue}\sum_{j=1}^{J} w_j = 1}
+  \end{align*}
+\end{frame}
+
+\begin{frame}{The ASCM}
+  \begin{align*}
+    {\color{primaryred}w^{\text{ASCM}}}
+    =
+    {\color{steelblue}w^{\text{SCM}}}
+    +
+    {\color{primaryred}
+    Z_0'
+    \left(
+    Z_0 Z_0'
+    + {\color{harmonizedblue}\lambda I}
+    \right)^{-1}
+    \left(
+    Z_1 - Z_0 w^{\text{SCM}}
+    \right)}
+    \end{align*}
+\end{frame}
+
+\begin{frame}{\textsc{Brazil Plot:}}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{brazil_scm_ascm.png}
+    \label{fig:brazil_scm}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Brazil Donor Weights:}
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{l r l r}
+    \toprule
+    \multicolumn{2}{c}{\textbf{SCM}} & \multicolumn{2}{c}{\textbf{ASCM}} \\
+    \cmidrule(r){1-2} \cmidrule(l){3-4}
+    \textbf{Donor} & \textbf{Weight} & \textbf{Donor} & \textbf{Weight} \\
+    \midrule
+    \multicolumn{4}{l}{\textit{Pre-treatment RMSE: 0.02 (SCM) \hfill 0.02 (ASCM)}} \\
+    \midrule
+    Madagascar   & 0.75 & Thailand        & 0.83 \\
+    Thailand     & 0.25 & Botswana        & 0.25 \\
+    Finland      & 0.00 & Singapore       & 0.12 \\
+    Netherlands  & 0.00 & Germany         & 0.12 \\
+    Hungary      & 0.00 & Norway          & 0.12 \\
+    Norway       & 0.00 & Japan           & 0.11 \\
+    Australia    & 0.00 & Belgium         & 0.10 \\
+    Iceland      & 0.00 & South Korea     & 0.10 \\
+    Italy        & 0.00 & Hong Kong       & 0.09 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{\textsc{US Plot:}}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{us_scm_ascm.png}
+    \label{fig:us_scm}
+\end{figure}
+\end{frame}
+
+\begin{frame}{US Donor Weight:}
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{l r l r}
+    \toprule
+    \multicolumn{2}{c}{\textbf{SCM}} & \multicolumn{2}{c}{\textbf{ASCM}} \\
+    \cmidrule(r){1-2} \cmidrule(l){3-4}
+    \textbf{Donor} & \textbf{Weight} & \textbf{Donor} & \textbf{Weight} \\
+    \midrule
+    \multicolumn{4}{l}{\textit{Pre-treatment RMSE: 0.00 (SCM) \hfill 0.00 (ASCM)}} \\
+    \midrule
+    Sri Lanka     & 0.33 & Luxembourg     & 0.44 \\
+    Nepal         & 0.18 & India          & 0.31 \\
+    Germany       & 0.16 & Egypt          & 0.26 \\
+    Luxembourg    & 0.15 & Australia      & 0.09 \\
+    Finland       & 0.10 & Germany        & 0.09 \\
+    Botswana      & 0.05 & Japan          & 0.07 \\
+    Philippines   & 0.03 & Belgium        & 0.07 \\
+    Madagascar    & 0.00 & Hong Kong      & 0.05 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{\textsc{Other Specifications:}}
+  Potentially, I would like to try other specifications
+  \begin{itemize}
+    \item \textcolor{primaryred}{Clustering + Random Forest}: From Araujo \cite{araujo2023synthetic}, allows to capture non-linearities and interactions without having to specify them a priori.
+    \item \textcolor{primaryred}{Neural Networks:} Very flexible, can capture complex relationships, but less interpretable and may require more data.
+    \item \textcolor{primaryred}{Matrix Completion (alternative method)}: Uses a global low-rank structure and learns latent factors across all units. Possible alternative method but less anchored in the dependent variable.
+  \end{itemize}
+  
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}{Two Complementary Databases}
+
+  \textbf{1. Full network database}
+  
+  \begin{itemize}
+      \item Built from the ownership trees of digital multinational groups
+      \item Includes \textbf{all subsidiaries}, including firms without financial data
+      \item Used to construct \textbf{group-level structural variables} and the complexity index
+  \end{itemize}
+  
+  \medskip
+  
+  \textbf{Key figures:}
+  \begin{itemize}
+      \item \textbf{124 multinational groups}
+      \item \textbf{146,214 unique firms} in the full network
+  \end{itemize}
+  
+  \medskip
+  
+  \textbf{2. Financial sample}
+  
+  \begin{itemize}
+      \item Restricted to firms with available \textbf{unconsolidated accounts (U1/U2)}
+      \item Used for the \textbf{econometric analysis}
+  \end{itemize}
+  
+  \end{frame}
+  
+  %------------------------------------------------
+  \begin{frame}{Descriptive Statistics --- Group Structure}
+  
+  \textbf{Summary statistics computed at the group level}
+  
+  \begin{center}
+  \small
+  \begin{tabular}{lccccc}
+  \toprule
+   & Obs & Mean & Std. Dev. & Min & Max \\
+  \midrule
+  Number of subsidiaries & 124 & 1414.59 & 5994.08 & 3 & 43333 \\
+  Number of countries & 124 & 34.34 & 33.76 & 1 & 157 \\
+  Number of industries & 124 & 59.20 & 102.79 & 2 & 564 \\
+  Mean depth & 124 & 5.57 & 2.75 & 1 & 10 \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+  
+  \medskip
+  
+  \begin{itemize}
+      \item Strong heterogeneity across groups
+      \item Some firms are extremely large, geographically dispersed and deeply layered
+  \end{itemize}
+  
+  \end{frame}
+  
+
+
+
+
+
+
+
+
+
+
+  %------------------------------------------------
+  \begin{frame}{Descriptive Statistics --- Geography and Tax Exposure}
+  
+  \begin{center}
+  \small
+  \begin{tabular}{lccccc}
+  \toprule
+   & Obs & Mean & Std. Dev. & Min & Max \\
+  \midrule
+  Tax haven affiliates & 124 & 105.73 & 493.92 & 0 & 4284 \\
+  Share tax haven affiliates & 124 & 0.087 & 0.094 & 0 & 0.778 \\
+  EU subsidiaries & 124 & 297.07 & 1014.75 & 1 & 8671 \\
+  Share EU subsidiaries & 124 & 0.528 & 0.269 & 0.057 & 1 \\
+  Non-EU subsidiaries & 124 & 1006.82 & 4856.35 & 0 & 34998 \\
+  Share non-EU subsidiaries & 124 & 0.396 & 0.265 & 0 & 0.919 \\
+  Top country share & 124 & 0.374 & 0.227 & 0.105 & 1 \\
+  Country HHI & 124 & 0.237 & 0.225 & 0.042 & 1 \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+  
+  \medskip
+  
+  \begin{itemize}
+      \item \textbf{109 groups} have at least one tax haven affiliate
+      \item This represents \textbf{87.9\%} of all groups
+  \end{itemize}
+  
+  \end{frame}
+  
+  %------------------------------------------------
+  \begin{frame}{Interpreting the Descriptive Statistics}
+  
+  \textbf{Main findings}
+  
+  \begin{itemize}
+      \item Digital multinationals are highly heterogeneous in terms of size and organizational structure
+      \item On average, groups operate in more than \textbf{34 countries}, confirming their strong international reach
+      \item Ownership structures can be very deep, with a maximum of \textbf{10 layers}
+  \end{itemize}
+  
+  \textbf{Tax haven exposure}
+  
+  \begin{itemize}
+      \item Tax haven use is widespread: nearly \textbf{88\%} of groups have at least one haven affiliate
+      \item However, the \textbf{intensity} of tax haven use varies strongly across firms
+  \end{itemize}
+  
+  \textbf{Implication}
+  
+  \begin{itemize}
+      \item Complexity is not one-dimensional: it combines size, hierarchy, geography, and possibly fiscal organization
+  \end{itemize}
+  
+  \end{frame}
+  
+  %------------------------------------------------
+  \begin{frame}{Methodology --- Purpose of the Complexity Index}
+  
+  \textbf{Research objective}
+  
+  \begin{itemize}
+      \item Construct an index capturing the \textbf{structural complexity} of digital multinational groups
+      \item Use this index as a proxy for firms' \textbf{capacity to engage in tax avoidance}
+  \end{itemize}
+  
+  \medskip
+  
+  \textbf{Important distinction}
+  
+  \begin{itemize}
+      \item The index does \textbf{not} directly measure tax avoidance
+      \item It captures structural characteristics that may \textbf{facilitate} tax optimization strategies
+  \end{itemize}
+  
+  \medskip
+  
+  \textbf{Empirical strategy}
+  
+  \begin{itemize}
+      \item Build the index at the group level using the full network
+      \item Test its relationship with tax-related outcomes in the financial sample
+  \end{itemize}
+  
+  \end{frame}
+  
+  %------------------------------------------------
+  \begin{frame}{Methodology --- PCA Approach}
+  
+  \textbf{Why PCA?}
+  
+  \begin{itemize}
+      \item All the variables I selected are variables that shows the structural complexity of a firm
+      \item PCA allows me to extract this \textbf{common component} across these dimensions
+      \item It avoids imposing arbitrary equal weights
+  \end{itemize}
+  
+  
+  \textbf{Variables included in the PCA}
+  
+  \begin{itemize}
+      \item Log number of subsidiaries
+      \item Maximum ownership depth
+      \item Log number of countries
+      \item Geographic dispersion $(1-\text{HHI})$
+      \item Sectoral diversification
+  \end{itemize}
+  
+  \textbf{Interpretation}
+  
+  \begin{itemize}
+      \item The first principal component is interpreted as a measure of \textbf{structural complexity}
+  \end{itemize}
+  
+  \end{frame}
+  
+  %------------------------------------------------
+  \begin{frame}{PCA Results}
+  
+  \textbf{Preliminary PCA results}
+  
+  \begin{itemize}
+      \item The first component is mainly driven by:
+      \begin{itemize}
+          \item group size (0.558),
+          \item ownership depth (0.504),
+          \item international scope (0.545)
+      \end{itemize}
+     
+      \item Additional dimensions also contribute:
+      \begin{itemize}
+          \item geographic dispersion (0.250),
+          \item sectoral diversification (0.320)
+      \end{itemize}
+  \end{itemize}
+  
+  \end{frame}
+  
+  
+  %------------------------------------------------
+  \begin{frame}{ Factor Analysis}
+  
+  \textbf{Objective}
+  
+  \begin{itemize}
+      \item Test whether complexity can be interpreted as a \textbf{latent variable}
+  \end{itemize}
+  
+  \medskip
+  
+  \textbf{Factor loadings (1-factor model)}
+  
+  \begin{center}
+  \small
+  \begin{tabular}{lc}
+  \toprule
+  Variable & Loading \\
+  \midrule
+  Log number of subsidiaries & 0.991 \\
+  Max depth & 0.825 \\
+  Log number of countries & 0.828 \\
+  Geographic dispersion & 0.139 \\
+  Sectoral diversification & 0.383 \\
+  Share tax haven affiliates & -0.153 \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+  
+  \medskip
+  
+  \textbf{Interpretation}
+  
+  \begin{itemize}
+      \item Complexity is primarily driven by \textbf{size, depth and international scope}
+      \item Tax haven exposure does \textbf{not load positively} on the main factor
+      \item Suggests that \textbf{fiscal strategies are distinct from structural complexity}
+  \end{itemize}
+  
+  \end{frame}
+
 \begin{frame}[allowframebreaks]{\textsc{References:}}
     \tiny
     % Print first X entries
     \printbibliography[heading=none]
 \end{frame}
+
 
 
 {
