@@ -1,0 +1,23 @@
+ATT: 0.006500
+
+Average synthetic-control predictor values:
+inflation_premean: 3.796345
+rgdpe_premean: -0.332908
+pop_premean: -0.350656
+emp_premean: -0.349554
+top1_inc_t1986: 0.891131
+top1_inc_t1987: 0.918871
+top1_inc_t1988: 0.939188
+top1_inc_t1989: 0.970715
+top1_inc_t1990: 0.994984
+top1_inc_t1991: 1.023930
+top1_inc_t1992: 1.057283
+top1_inc_t1993: 1.057512
+top1_inc_t1994: 1.103479
+top1_inc_t1995: 1.115021
+
+Min sparsity: 1
+Median sparsity: 1
+Max sparsity: 1
+Active control units: 1
+0 treated units have sparsity larger than p+1 = 15.

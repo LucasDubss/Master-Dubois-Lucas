@@ -36,7 +36,7 @@
 \usepackage[backend=biber,style=apa,sorting=nyt]{biblatex}
 
 %==================== I m a g e s ====================
-\graphicspath{{Images/}}
+\graphicspath{{Images_tex/}{./}}
 
 %==================== C o l o r s ====================
 \definecolor{darkgreen}{rgb}{0.0, 0.5, 0.0}
@@ -85,7 +85,7 @@
 \par
 \textit{Supervisor: Malka Guillot}
 \par
-2024-2025
+2024-2026
 \begin{center}
 \rule{\linewidth}{1pt}
 \vspace{0,5cm}
@@ -120,9 +120,51 @@ Their findings reveal that once we take these frictions into account, the divine
 \newpage
 
 %-------------- Main Content --------------
+\section{Data:}
+\subsection{Data Adjustment for Brazil:}
 
+The series of top-income inequality for Brazil, from \cite{morgan2025distribution}, is based on a combination of tax data, national accounts and surveys, harmonized following the methodology of the World Inequality Database (WID). 
+While this approach ensures macro-consistency, the authors highlight the presence of substantial volatility in the 1980s and early 1990s, a period characterized by extreme inflation prior to the \textit{Plano Real}.
+
+This feature raises an important concern for the estimation of a Synthetic Control Method (SCM). 
+Since SCM relies on a close fit of the pre-treatment trajectory, excessive volatility in the outcome variable may lead to an overfitting of transitory fluctuations rather than underlying trends, thereby biasing the estimation of the treatment effect. 
+In particular, the sharp increase in top-income shares around the implementation of the \textit{Plano Real} may partly reflect measurement noise rather than a genuine structural change in inequality.
+
+\par
+The literature provides several mechanisms through which macroeconomic instability and inflation can distort tax-based measures of inequality. 
+First, \cite{burkhauser_measuring_2015} show that taxable capital gains may be a poor proxy for actual income, particularly around periods of major economic or fiscal shocks. 
+Second, and more directly relevant to this context, \cite{alvaredo2007richargentina} documents how hyperinflation in Argentina during the 1980s leads to substantial measurement issues in tax data, including increased tax evasion, underreporting of income, and incentives to postpone income declaration. 
+These mechanisms imply that observed top-income shares during periods of very high inflation may be both noisy and biased, and therefore not fully comparable over time.
+
+\par
+In light of these considerations, I implement an adjustment procedure that treats inflation as a proxy for time-varying measurement noise. 
+Rather than attempting to directly “correct” the level of inequality—which would require unavailable microdata—I adopt a shrinkage approach that reduces the influence of observations recorded during periods of extreme inflation.
+
+\par
+Specifically, I define a hyperinflation indicator based on the annual GDP deflator:
+
+\begin{align}
+hyper\_inflation_t =
+\begin{cases} 
+1 & \text{if } inflation_t > 200, \\ 
+0 & \text{otherwise.}
+\end{cases}
+\end{align}
+
+To assess the relationship between inflation and the volatility of top-income shares, I estimate the following panel regression across countries:
+
+\begin{align}
+top1\_inc_{it} = \gamma_0 + \gamma_1 hyper\_inflation_{it} + \gamma_2 hyper\_inflation_{it}^2 + \varepsilon_{it}
+\end{align}
+
+The results, reported in Table \ref{tab:regression}, indicate that periods of hyperinflation are associated with significant deviations in observed top-income shares, and that this relationship is non-linear. 
+Importantly, this regression should not be interpreted as identifying a causal effect of inflation on inequality, but rather as capturing systematic patterns consistent with increased measurement noise during high-inflation episodes, but as a smoothing treatment to mitigate fluctuations partially attributable to measurement issues.
+
+
+
+\pagebreak
 In 1995, Brazil eliminated its dividend taxes, arguing that double taxation of corporate profits hindered growth and distorted capital allocation.
-This tax policy, however, helped the consolidation of a very regressive tax system, in which the 85th percentile pays a higher average tax rate than the 99th by 2022 (Figure~\ref{tab:Figure 1}). 
+This tax policy, however, helped the consolidation of a very regressive tax system, in which the 85th percentile pays a higher average tax rate than the 99th by 2022 
 Since then, inequality in Brazil has remained on the rise, confining the 7th most populous nation to a capital concentrating status quo. 
 As of 2022, Brazil's Gini index is 53\%, making it the most unequal country in Latin America and among the top 10 globally\footnote{World Bank, 2022}.
 Brazil also has the highest wealth concentration worldwide: the top 1\% holds 48.4\% of national wealth\footnote{Global Wealth Report, 2023}.
@@ -135,7 +177,7 @@ Together, those studies provide a strong empirical framework that will serve as 
 \par
 Considering the context of Brazil and the existing literature, I would like to dedicate my master’s thesis to understanding the drivers of top-income inequality in Brazil, with a particular focus on the role of dividend taxation in shaping income distribution.
 The database provided by \href{https://wid.world/country/brazil/}{WID} offers a wealth of time series indicators related to income distribution and inequality, which will be crucial for my analysis.
-In particular, the study by \cite{morgan2025distribution} presents an extensive analysis of the evolution of income, minimum wages, and wealth in Brazil over a 72-year period (\textit{see} Figure~\ref{tab:Figure 2}), by combining data from various official Brazilian agencies and other non-official microdata sources.
+In particular, the study by \cite{morgan2025distribution} presents an extensive analysis of the evolution of income, minimum wages, and wealth in Brazil over a 72-year period (\textit{see, by combining data from various official Brazilian agencies and other non-official microdata sources}.
 Moreover, the authors provide a well-structured use of the raw data they compiled, along with a solid theoretical framework to understand the evolution of income and wealth in Brazil.
 \par    
 My approach will be the Synthetic Control Method (SCM), which allows for the construction of a synthetic control group that approximates the characteristics of the treated unit.
@@ -211,29 +253,52 @@ This process is yet again demonstrated by \cite{abadie2023penalized}, who used p
 
 \section*{Appendix}
 
-\begin{figure}[H]
+\begin{table}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{aliquota.png}
-    \caption{Average tax rate by income percentile}
-    \label{tab:Figure 1}
+    \caption{OLS Regression Results}
+    \label{tab:regression}
+    \begin{tabular}{lcccc}
+    \toprule
+    \textbf{Dependent variable:} & \multicolumn{4}{c}{top1\_inc} \\
+    \midrule
+     & Coefficient & Std. Error & t-stat & p-value \\
+    \midrule
+    Constant                & 0.1382     & 0.001      & 128.135  & 0.000 \\
+    hyper\_inflation        & 0.0002     & 4.13e-05   & 4.519    & 0.000 \\
+    hyper\_inflation\_sq    & -5.606e-08 & 1.86e-08   & -3.016   & 0.003 \\
+    \midrule
+    Observations            & \multicolumn{4}{c}{1989} \\
+    R-squared               & \multicolumn{4}{c}{0.020} \\
+    Adjusted R-squared      & \multicolumn{4}{c}{0.019} \\
+    F-statistic             & \multicolumn{4}{c}{20.65} \\
+    Prob (F-statistic)      & \multicolumn{4}{c}{1.33e-09} \\
+    Log-Likelihood          & \multicolumn{4}{c}{3218.4} \\
+    AIC                     & \multicolumn{4}{c}{-6431} \\
+    BIC                     & \multicolumn{4}{c}{-6414} \\
+    \midrule
+    Durbin-Watson           & \multicolumn{4}{c}{0.087} \\
+    Omnibus                 & \multicolumn{4}{c}{105.563} \\
+    Prob (Omnibus)          & \multicolumn{4}{c}{0.000} \\
+    Jarque-Bera             & \multicolumn{4}{c}{118.913} \\
+    Prob (JB)               & \multicolumn{4}{c}{1.51e-26} \\
+    Skew                    & \multicolumn{4}{c}{0.586} \\
+    Kurtosis                & \multicolumn{4}{c}{2.751} \\
+    Cond. No.               & \multicolumn{4}{c}{2.02e+05} \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{brazil_inflation_x_topinc.png}
+    \caption{Adjustment of top-income inequality series for Brazil during hyperinflation.}
+    \label{fig:adjustment}
 \end{figure}
 
-{\Large{\textit{Translation:}}}
-\\
-\\
-Average tax rate by income percentile among reporters (2022).
-\\
-(As a \%)
-\\
-\textcolor{blue}{\textbf{---}} Minimum \textcolor{darkgreen}{\textbf{---}} Average \textcolor{orange}{\textbf{---}} Maximum.
-\\
-Source: IBGE, 2022.
-\\
-\begin{figure}[H]
+\begin{figure}
     \centering
-    \includegraphics[width=0.6\textwidth]{oneperc.png}
-    \caption{Average income over time}
-    \label{tab:Figure 2}
+    \includegraphics[width=1\textwidth]{us_ascm_mundi.png}
+    \caption{Weights ASCM for the US}
+    \label{fig:mundi_ascm}
 \end{figure}
-
 \end{document}
